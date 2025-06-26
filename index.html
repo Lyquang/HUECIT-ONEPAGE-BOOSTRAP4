@@ -23,7 +23,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm justify-content-end" style="background-color: rgb(171, 171, 171); max-height: 40px; padding: 0.5rem 1rem;">
+<nav class="navbar navbar-expand-sm justify-content-end" style="background-color: #F1EBE9; max-height: 40px; padding: 0.5rem 1rem;">
     <ul class="navbar-nav ml-auto align-items-center flex-row" id="infoNav" >
         <li>
             <a class="nav-link text-dark" href="#" target="_blank" title="Facebook">
@@ -50,9 +50,9 @@
                 <i class='bx bxl-twitter' style="font-size: 1.5rem;"></i>
             </a>
         </li>
-        <li><a class="nav-link text-dark" href="tel:+84543823650"><i class='bx bx-phone'></i> +84.54.3823650</a></li>
-        <li><a class="nav-link text-dark" href="mailto:info@huecit.com"><i class='bx bx-envelope'></i> info@huecit.com</a></li>
-        <li><a class="nav-link text-dark" href="#"><i class='bx bx-map'></i> 06 Lê Lợi, thành phố Huế</a></li>
+        <li><a class="nav-link" href="tel:+84543823650" style="color: #735858;"><i class='bx bx-phone'></i> +84.54.3823650</a></li>
+        <li><a class="nav-link" href="mailto:info@huecit.com" style="color: #735858;"><i class='bx bx-envelope'></i> info@huecit.com</a></li>
+        <li><a class="nav-link" href="#" style="color: #735858;"><i class='bx bx-map'></i> 06 Lê Lợi, thành phố Huế</a></li>
     </ul>
 </nav>
 
@@ -75,18 +75,19 @@
 </nav>
 
 <!-- Carousel (Slideshow) -->
-<section id="home" class="container-fluid my-5">
-    <div class="bg-light p-3 rounded">
+
+<section id="home" class="container-fluid p-0">
+    <div class="w-100 ">
         <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="HomeAssets/home_1.png" class="d-block w-100 rounded-" style="height: 600px; object-fit: cover;" alt="Ảnh slide 1">
+                    <img src="HomeAssets/home_1.png" class="d-block w-100 h-200 rounded-" style="border-radius: 10px;height: 600px; object-fit: cover;" alt="Ảnh slide 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="HomeAssets/home_2.png" class="d-block w-100 rounded" style="height: 600px; object-fit: cover;" alt="Ảnh slide 2">
+                    <img src="HomeAssets/home_2.png" class="d-block w-100 h-200 rounded" style="border-radius: 10px;height: 600px; object-fit: cover;" alt="Ảnh slide 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="HomeAssets/home_3.png" class="d-block w-100 rounded" style="height: 600px; object-fit: cover;" alt="Ảnh slide 3">
+                    <img src="HomeAssets/home_3.png" class="d-block w-100 h-200 rounded" style="border-radius: 10px;height: 600px; object-fit: cover;" alt="Ảnh slide 3">
                 </div>
             </div>
         </div>
@@ -94,7 +95,7 @@
 </section>
 
 <!-- Product Section -->
-<section id="product" class="container-fluid my-5">
+<section id="product" class="container-fluid my-5" style="padding: 50px;">
     <h2 class="text-center text-warning mb-4 font-weight-bold display-5 text-uppercase">Sản phẩm</h2>
     <p class="text-center text-danger mb-5 font-italic">Hệ thống vé điện tử tham quan di tích Huế</p>
     <div class="row">
@@ -137,11 +138,50 @@
             </div>
         </div>
     </div>
+
+
+    <div class="card about-bg position-relative px-4 py-3 text-white w-100 h-100" style="height: 220px; border: none ">
+
+        <div class="d-flex flex-row justify-content-between align-items-center h-100 w-100 flex-wrap" style="max-width: 800px; margin-left: auto; margin-right: auto; max-height:fit-content;">
+            
+            <div class="d-flex flex-column justify-content-center" style="min-width: 220px;">
+                <h4 class="font-weight-bold text-uppercase">Về chúng tôi</h4>
+                <p class="mb-0">Những thành tựu chúng tôi đã đạt được</p>
+            </div>
+            
+            <div class="d-flex flex-wrap justify-content-end text-end gap-4">
+                <div class="d-flex flex-column align-items-center mx-3">
+                    <div class="font-weight-bold fs-4 mb-2">25 <i class='bx bx-up-arrow-alt'></i></div>
+                    <small class="font-weight-bold fs-4 mb-2">Năm kinh nghiệm</small>
+                </div>
+                <div class="d-flex flex-column align-items-center mx-3">
+                    <div class="font-weight-bold fs-4 mb-2">300 <i class='bx bx-up-arrow-alt'></i></div>
+                    <small class="font-weight-bold fs-4 mb-2">Khách hàng</small>
+                </div>
+                <div class="d-flex flex-column align-items-center mx-3">
+                    <div class="font-weight-bold fs-4 mb-2">400 <i class='bx bx-up-arrow-alt'></i></div>
+                    <small class="font-weight-bold fs-4 mb-2">Dự án</small>
+                </div>
+                <div class="d-flex flex-column align-items-center mx-3">
+                    <div class="font-weight-bold fs-4 mb-2">20 <i class='bx bx-up-arrow-alt'></i></div>
+                    <small class="font-weight-bold fs-4 mb-2">Giải thưởng</small>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+
+
+  </div>
+
 </section>
 
 
 <!-- Dịch vụ -->
-<section id="services" class="container-fluid my-5">
+<section id="services" class="container-fluid services-news-bg rounded" style="padding: 50px; margin-top: 0px; margin-bottom: 0px;">
     <h2 class="text-center text-warning mb-4 font-weight-bold display-5 text-uppercase">Dịch vụ</h2>
     <p class="text-center text-danger mb-5 font-italic">Chúng tôi luôn đem đến cho bạn những dịch vụ tốt nhất</p>
 
@@ -237,26 +277,26 @@
 
 
 
-<section id="education" class="container-fluid my-5 rounded education-bg-gradient" >
+<section id="education" class="container-fluid my-5 rounded education-bg" style="padding: 50px;" >
     <div class="row align-items-center mb-5" style="margin: 10px;">
         <div class="col-md-6 mb-3 mb-md-0">
 
-            <h2 class="text-center text-warning mb-4 font-weight-bold display-5 text-uppercase">Đào tạo</h2>
+            <h2 class="text-center edu-text-color mb-4 font-weight-bold display-5 text-uppercase">Đào tạo</h2>
 
             <h5 class="text-center text-light">Các khóa đào tạo ngắn hạn, Đào tạo nghề, Mỹ thuật đa phương tiện, Lập trình viên quốc tế, Đào tạo cán bộ, CCVC</h5>
         </div>
         <div class="col-md-6">
             <div class="row text-center">
                 <div class="col-4">
-                    <span class="display-4 text-primary font-weight-bold">99%</span>
+                    <span class="display-4 font-weight-bold edu-text-color ">99%</span>
                     <p class="mb-0 text-light font-weight-bold">Ra trường có việc làm</p>
                 </div>
                 <div class="col-4">
-                    <span class="display-4 text-success font-weight-bold">2000+</span>
+                    <span class="display-4 font-weight-bold edu-text-color ">2000+</span>
                     <p class="mb-0 text-light font-weight-bold">Học viên đã học</p>
                 </div>
                 <div class="col-4">
-                    <span class="display-4 text-warning font-weight-bold">100+</span>
+                    <span class="display-4 font-weight-bold edu-text-color ">100+</span>
                     <p class="mb-0 text-light font-weight-bold">Khóa học được mở</p>
                 </div>
             </div>
@@ -265,7 +305,7 @@
 
     <!-- Tin tức đào tạo -->
     <div  style="margin: 10px;">
-        <h3 class="mb-4 font-weight-bold text-warning display-5 text-uppercase">Tin tức đào tạo</h3>
+        <h3 class="mb-4 font-weight-bold  edu-text-color display-5 text-uppercase">Tin tức đào tạo</h3>
         <div class="row">
             <div class="col-md-3 mb-4 rounded" >
                 <div class="card h-100" style="background-color:transparent; border: none;">
@@ -306,7 +346,7 @@
 
     <!-- Thông báo tuyển sinh -->
      <div style="margin: 10px;">
-            <h3 class="mb-4 font-weight-bold text-warning display-5 text-uppercase">Thông báo tuyển sinh</h3>
+            <h3 class="mb-4 font-weight-bold edu-text-color display-5 text-uppercase">Thông báo tuyển sinh</h3>
             <div class="row">
 
                 <div class="col-md-6 mb-4">
@@ -355,7 +395,7 @@
 </section>
 
 <!-- News Section -->
-<section id="news" class="container-fluid my-5">
+<section id="news" class="container-fluid services-news-bg" style="padding: 50px;">
     <h2 class="text-center text-warning mb-4 font-weight-bold display-5 text-uppercase">Tin tức</h2>
     <div class="row">
         <div class="col-md-3 mb-4">
@@ -364,9 +404,7 @@
                 <div class="card-body">
                     <p class="card-text">📅 03/03/2025</p>
                     <p class="card-text">Ra mắt Cổng thông tin điện tử và Trang thông tin Điều hành tác nghiệp Đảng ủy UBND Thành phố Huế</p>
-                    <div class="d-flex justify-content-end align-items-end" style="position: absolute; bottom: 16px; right: 16px; left: 16px;">
-                        <a href="#" class="btn btn-primary btn-md font-weight-bold">Xem chi tiết</a>
-                    </div>
+                    <a href="#" class="text-danger mt-auto font-weight-bold">Xem chi tiết <span class="ml-1">➤</span></a>
                 </div>
             </div>
         </div>
@@ -377,9 +415,7 @@
                 <div class="card-body">
                     <p class="card-text">📅 03/03/2025</p>
                     <p class="card-text">HueCIT công bố quyết định bổ nhiệm nhân sự quản lý cấp phòng</p>
-                    <div class="d-flex justify-content-end align-items-end" style="position: absolute; bottom: 16px; right: 16px; left: 16px;">
-                        <a href="#" class="btn btn-primary btn-md font-weight-bold">Xem chi tiết</a>
-                    </div>
+                    <a href="#" class="text-danger mt-auto font-weight-bold">Xem chi tiết <span class="ml-1">➤</span></a>
                 </div>
             </div>
         </div>
@@ -390,9 +426,7 @@
                 <div class="card-body">
                     <p class="card-text">📅 03/03/2025</p>
                     <p class="card-text">Đưa cơ chế chính sách thành lợi thế cạnh tranh phát triển khoa học công nghệ</p>
-                    <div class="d-flex justify-content-end align-items-end" style="position: absolute; bottom: 16px; right: 16px; left: 16px;">
-                        <a href="#" class="btn btn-primary btn-md font-weight-bold">Xem chi tiết</a>
-                    </div>
+                    <a href="#" class="text-danger mt-auto font-weight-bold">Xem chi tiết <span class="ml-1">➤</span></a>
                 </div>
             </div>
         </div>
@@ -403,9 +437,7 @@
                 <div class="card-body">
                     <p class="card-text">📅 03/03/2025</p>
                     <p class="card-text">Gần 1,500 học sinh trong cả nước đăng ký tham gia Cuộc thi Hue-ICT Challenge 2025</p>
-                    <div class="d-flex justify-content-end align-items-end" style="position: absolute; bottom: 16px; right: 16px; left: 16px;">
-                        <a href="#" class="btn btn-primary btn-md font-weight-bold">Xem chi tiết</a>
-                    </div>
+                    <a href="#" class="text-danger mt-auto font-weight-bold">Xem chi tiết <span class="ml-1">➤</span></a>
                 </div>
             </div>
         </div>
@@ -415,7 +447,7 @@
 </section>
 
 <!-- SE Park Section -->
-<section id="se-park" class="container-fluid my-5">
+<section id="se-park" class="container-fluid my-5" style="padding: 50px;">
     <h2 class="text-center text-warning mb-4 font-weight-bold display-5 text-uppercase">Công viên phần mềm Huế</h2>
     <div class="overflow-auto" style="white-space: nowrap;   scrollbar-width: none">
         <div class="d-inline-flex align-items-center">
