@@ -1,22 +1,78 @@
-/* .container {
-  max-width: 1600px;
-} */
- 
- section {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+  /* .container {
+    max-width: 1600px;
+  } */
+#inforNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-  #infoNav .nav-item {
-      margin-right: 0.2rem;
-      margin-left: 0.2rem;
-  }
+#inforNav .social-media,#inforNav .contact,#inforNav .language {
+  margin-right: 10px; /* Khoảng cách giữa các nhóm div */
+}
 
-  #infoNav .nav-link {
-      padding-right: 0.2rem;
-      padding-left: 0.2rem;
-  }
+#inforNav .social-media:last-child,#inforNav .contact:last-child, #inforNav .language:last-child {
+  margin-right: 0; /* Loại bỏ margin-right cho phần tử cuối cùng */
+}
 
+#inforNav .navbar-nav .nav-item {
+  margin-right: 2px; /* Khoảng cách 8px giữa các li (4px + 4px) */
+  margin-left: 2px;
+}
+
+#inforNav .navbar-nav .nav-link {
+  padding-right: 0.1rem;
+  padding-left: 0.1rem;
+}
+
+#inforNav .nav-link img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#infoNav-socialMedia .nav-link span img {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 576px) {
+  #inforNav {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+  #inforNav .social-media, #inforNav .contact, #inforNav .language {
+    margin-bottom: 20px; /* Khoảng cách dọc trên mobile */
+    margin-right: 0;
+}
+
+  #inforNav .navbar-nav .nav-item {
+    margin-right: 2px;
+    margin-left: 2px; /* Giảm khoảng cách giữa li trên mobile */
+  }
+}
+
+.navbar {
+    height: 70px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #FF6200 !important; /* Màu cam khi active */
+    font-weight: bold;
+    border-bottom: 2px solid #FF6200; /* Thêm underline khi active */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FF6200;
+    border-bottom: 2px solid #FF6200; /* Thêm underline khi hover */
+}
 
 .footer-gradient {
   background: linear-gradient(135deg, #2d0000, #440000, #660000, #880000, #aa0000);
