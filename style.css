@@ -1,6 +1,17 @@
   /* .container {
     max-width: 1600px;
   } */
+
+/* .container {
+    max-width: 1200px; 
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1920px; 
+    }
+} */
+
 #inforNav {
   display: flex;
   align-items: center;
@@ -75,7 +86,7 @@
 }
 
 .footer-gradient {
-  background: linear-gradient(135deg, #2d0000, #440000, #660000, #880000, #aa0000);
+  background: linear-gradient(135deg, #2d0000, #440000, #660000, #440000, #2d0000 );
   color: white;
 }
 .footer-text-color {
@@ -108,6 +119,64 @@
   position: relative;
   z-index: 2;
 }
+
+/* Responsive trên mobile (dưới 576px) */
+        @media (max-width: 576px) {
+            #product .text-center .display-5 {
+                font-size: 1.875rem; /* 30px -> 1.875rem */
+            }
+
+            #product .text-center .mb-5 {
+                font-size: 1.25rem; /* 20px -> 1.25rem */
+            }
+
+            #product .col-md-6 .position-relative img:first-child {
+                max-height: 18.75rem; /* 300px -> 18.75rem */
+                max-width: 100%;
+            }
+
+            #product .col-md-6 .position-relative .d-flex {
+                max-width: 100%;
+                flex-wrap: wrap;
+            }
+
+            #product .timeline .d-flex {
+                height: auto;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #product .timeline .d-flex .flex-column {
+                margin-right: 0;
+                margin-bottom: 1rem; /* 16px -> 1rem */
+            }
+
+            #product .timeline .d-flex .flex-column span:last-child {
+                display: none; /* Ẩn vector trên mobile */
+            }
+
+            .about-achievements-bar {
+                max-height: 15rem; /* 240px -> 15rem */
+                padding: 1rem; /* 16px -> 1rem */
+            }
+
+            .about-achievements-bar .row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-achievements-bar .col-md-4 .font-weight-bold {
+                font-size: 1rem; /* 16px -> 1rem */
+            }
+
+            .about-achievements-bar .col-md-8 .font-weight-bold {
+                font-size: 0.875rem; /* 14px -> 0.875rem */
+            }
+
+            .about-achievements-bar .col-md-8 span {
+                font-size: 0.625rem; /* 10px -> 0.625rem */
+            }
+        }
 
 
 
