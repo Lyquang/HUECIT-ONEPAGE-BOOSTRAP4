@@ -1,124 +1,49 @@
-  /* .container {
-    max-width: 1600px;
-  } */
 
-/* .container {
-    max-width: 1200px; 
-}
+/* .container-extended {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+} 
 
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1920px; 
-    }
-} */
-
-#inforNav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-#inforNav .social-media,#inforNav .contact,#inforNav .language {
-  margin-right: 10px; /* Khoảng cách giữa các nhóm div */
-}
-
-#inforNav .social-media:last-child,#inforNav .contact:last-child, #inforNav .language:last-child {
-  margin-right: 0; /* Loại bỏ margin-right cho phần tử cuối cùng */
-}
-
-#inforNav .navbar-nav .nav-item {
-  margin-right: 2px; /* Khoảng cách 8px giữa các li (4px + 4px) */
-  margin-left: 2px;
-}
-
-#inforNav .navbar-nav .nav-link {
-  padding-right: 0.1rem;
-  padding-left: 0.1rem;
-}
-
-#inforNav .nav-link img {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-
-#infoNav-socialMedia .nav-link span img {
-  width: 15px;
-  height: 15px;
-}
-
-@media (max-width: 576px) {
-  #inforNav {
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-  #inforNav .social-media, #inforNav .contact, #inforNav .language {
-    margin-bottom: 20px; /* Khoảng cách dọc trên mobile */
-    margin-right: 0;
-}
-
-  #inforNav .navbar-nav .nav-item {
-    margin-right: 2px;
-    margin-left: 2px; /* Giảm khoảng cách giữa li trên mobile */
+@media (max-width: 1200px) {
+  .container-extended {
+    max-width: 1140px;
   }
 }
 
-.navbar {
-    height: 70px;
-    transition: background-color 0.3s ease;
+@media (max-width: 1400px) {
+  .container-extended {
+    max-width: 1320px;
+  }
 }
 
-.navbar-nav .nav-item .nav-link {
-    color: #000;
-    transition: color 0.3s ease;
+@media (max-width: 1600px) {
+  .container-extended {
+    max-width: 1500px;
+  }
 }
 
-.navbar-nav .nav-item.active .nav-link {
-    color: #FF6200 !important; /* Màu cam khi active */
-    font-weight: bold;
-    border-bottom: 2px solid #FF6200; /* Thêm underline khi active */
+@media (max-width: 1800px) {
+  .container-extended {
+    max-width: 1700px;
+  }
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-    color: #FF6200;
-    border-bottom: 2px solid #FF6200; /* Thêm underline khi hover */
+@media (max-width: 2000px) {
+  .container-extended {
+    max-width: 1920px;
+  }
 }
 
-.footer-gradient {
-  background: linear-gradient(135deg, #2d0000, #440000, #660000, #440000, #2d0000 );
-  color: white;
-}
-.footer-text-color {
-  color: linear-gradient(135deg, #2d0000, #440000, #660000, #880000, #aa0000);
+@media (max-width: 2200px) {
+  .container-extended {
+    max-width: 2100px;
+  }
+} */
 
-}
-
-.education-bg {
-  position: relative;
-  background: url("EduAssets/edu_bg.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.about-bg {
-  position: relative;
-  background-image: url("AboutAssets/about.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-}
-.education-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 115, 0, 0.5); /* lớp màu cam với độ mờ */
-  z-index: 1;
-}
-.education-bg > * {
-  position: relative;
-  z-index: 2;
-}
 
 /* Responsive trên mobile (dưới 576px) */
         @media (max-width: 576px) {
@@ -177,6 +102,111 @@
                 font-size: 0.625rem; /* 10px -> 0.625rem */
             }
         }
+  
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+
+
+
+
+#inforNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#inforNav .social-media,#inforNav .contact,#inforNav .language {
+  margin-right: 10px; /* Khoảng cách giữa các nhóm div */
+}
+
+#inforNav .social-media:last-child,#inforNav .contact:last-child, #inforNav .language:last-child {
+  margin-right: 0; /* Loại bỏ margin-right cho phần tử cuối cùng */
+}
+
+#inforNav .navbar-nav .nav-item {
+  margin-right: 2px; /* Khoảng cách 8px giữa các li (4px + 4px) */
+  margin-left: 2px;
+}
+
+#inforNav .navbar-nav .nav-link {
+  padding-right: 0.1rem;
+  padding-left: 0.1rem;
+}
+
+#inforNav .nav-link img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#infoNav-socialMedia .nav-link span img {
+  width: 15px;
+  height: 15px;
+}
+
+
+
+.navbar {
+    height: 70px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #FF6200 !important; /* Màu cam khi active */
+    font-weight: bold;
+    border-bottom: 2px solid #FF6200; /* Thêm underline khi active */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FF6200;
+    border-bottom: 2px solid #FF6200; /* Thêm underline khi hover */
+}
+
+.footer-gradient {
+  background: linear-gradient(135deg, #2d0000, #440000, #660000, #440000, #2d0000 );
+  color: white;
+}
+.footer-text-color {
+  color: linear-gradient(135deg, #2d0000, #440000, #660000, #880000, #aa0000);
+
+}
+
+.education-bg {
+  position: relative;
+  background: url("EduAssets/edu_bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-bg {
+  position: relative;
+  background-image: url("AboutAssets/about.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.education-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 115, 0, 0.5); /* lớp màu cam với độ mờ */
+  z-index: 1;
+}
+.education-bg > * {
+  position: relative;
+  z-index: 2;
+}
+
 
 
 
