@@ -146,8 +146,10 @@
 
 .nav-link {
   color: black;
-  padding:0%;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0%;
+
 }
 
 .footer-gradient {
