@@ -1,3 +1,8 @@
+
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1450px;
@@ -126,7 +131,6 @@
   max-height: 70px;
   color: #32343d;
   font-size: 18px;
-  font-family: Mulish;
   font-weight: 600;
   line-height: 26px;
   word-wrap: break-word;
@@ -143,27 +147,10 @@
   color: #ff6200;
   border-bottom: 2px solid #ff6200;
 } */
-
-.outer-underline {
-  width: 220px;
-  height: 5px;
-  background: #ffdcd8;
-  border-radius: 3px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.iner-underline {
-  width: 100px;
-  height: 5px;
-  background: #ff9789;
-  border-radius: 3px;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  z-index: 1;
+.img-des{
+  width: 165px;
+  height: 100px;
+  border-radius: 10px;
 }
 
 .about-achievements-bar {
@@ -182,7 +169,6 @@
 .about-num {
   color: white;
   font-size: 40px;
-  font-family: Mulish;
   font-weight: 700;
   word-wrap: break-word;
 }
@@ -191,7 +177,6 @@
   font-size: 2rem;
   color: white;
   font-size: 36px;
-  font-family: Mulish;
   font-weight: 700;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -200,7 +185,6 @@
 .text-namKinhNghiem {
   color: white;
   font-size: 16px;
-  font-family: Mulish;
   font-weight: 700;
   word-wrap: break-word;
 }
@@ -213,7 +197,6 @@
 .text-nhungThanhTuu {
   color: white;
   font-size: 20px;
-  font-family: Mulish;
   font-weight: 600;
   word-wrap: break-word;
 }
@@ -239,9 +222,27 @@
   margin: 0%;
 }
 
+.header {
+  color: #e8533f;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  border-bottom: 1px solid #FFDCD8;
+  width: 300px;
+  height: 53px;
+}
+
+.header-underline{
+  border-bottom: 3px solid #FF9789;
+
+}
 .sub-Header {
   color: #7b2a09;
   font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-wrap: break-word;
 }
 
 .full-pro-des {
@@ -255,7 +256,6 @@
 .pro-Item1 {
   color: white;
   font-size: 14px;
-  font-family: Mulish;
   font-weight: 400;
   line-height: 20px;
   word-wrap: break-word;
