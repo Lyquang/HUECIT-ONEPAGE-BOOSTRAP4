@@ -70,33 +70,39 @@
         </div>
 
         <div class="contact navbar-nav align-items-center flex-row">
-          <div>
-            <a href="tel:+84543823650">
+          <div class="d-flex align-items-center mr-3">
+            <a href="tel:+84543823650" class="d-flex align-items-center">
               <img
-                class="img-contact"
+                class="img-contact mr-2"
                 src="IconAssets/icon_phone.svg"
                 alt="Phone"
-              /><span class="right-border">+84.54.3823650</span>
+                height="20"
+              />
+              <span class="right-border">+84.54.3823650</span>
             </a>
           </div>
 
-          <div class="contact-item">
-            <a href="mailto:info@huecit.com">
+          <div class="d-flex align-items-center mr-3">
+            <a href="mailto:info@huecit.com" class="d-flex align-items-center">
               <img
-                class="img-contact"
+                class="img-contact mr-2"
                 src="IconAssets/icon_mail.svg"
                 alt="Mail"
-              /><span class="right-border">info@huecit.com</span>
+                height="20"
+              />
+              <span class="right-border">info@huecit.com</span>
             </a>
           </div>
 
-          <div class="contact-item">
-            <a href="#">
+          <div class="d-flex align-items-center">
+            <a href="#" class="d-flex align-items-center text-dark">
               <img
-                class="img-contact"
+                class="img-contact mr-2"
                 src="IconAssets/icon_location.svg"
                 alt="Location"
-              /><span class="no-border">6 Lê Lợi, thành phố Huế</span>
+                height="20"
+              />
+              <span class="no-border">6 Lê Lợi, thành phố Huế</span>
             </a>
           </div>
         </div>
@@ -108,7 +114,6 @@
                 class="language-icon"
                 src="IconAssets/icon_VN.svg"
                 alt="VN"
-                style=""
               />
             </a>
           </div>
@@ -143,8 +148,11 @@
         </button> -->
 
         <!-- Menu collapse -->
-        <div class="collapse navbar-collapse" >
-          <div class="navbar-nav ml-auto d-flex align-items-center flex-row" id="mainNav">
+        <div class="collapse navbar-collapse">
+          <div
+            class="navbar-nav ml-auto d-flex align-items-center flex-row"
+            id="mainNav"
+          >
             <a class="nav-link" href="#home">Trang chủ</a>
             <a class="nav-link" href="#about">Giới thiệu</a>
             <a class="nav-link" href="#product">Sản phẩm</a>
@@ -209,55 +217,17 @@
         <h2 class="text-danger font-weight-bold display-5 text-uppercase mb-2">
           Sản phẩm
         </h2>
-        <div
-          style="
-            width: 220px;
-            height: 5px;
-            background: #ffdcd8;
-            border-radius: 3px;
-            margin: 0 auto;
-            position: relative;
-          "
-        >
-          <div
-            style="
-              position: absolute;
-              left: 0;
-              right: 0;
-              top: 50%;
-              height: 1px;
-              background: #f36b4e33;
-              width: 100%;
-              transform: translateY(-50%);
-              z-index: 0;
-            "
-          ></div>
-          <div
-            style="
-              width: 100px;
-              height: 5px;
-              background: #ff9789;
-              border-radius: 3px;
-              margin: 0 auto;
-              position: absolute;
-              left: 50%;
-              top: 0;
-              transform: translateX(-50%);
-              z-index: 1;
-            "
-          ></div>
+        <div class="outer-underline">
+          <div class="iner-underline"></div>
         </div>
       </div>
 
-      <p
-        class="text-center mb-5 font-italic text-uppercase"
-        style="color: #7b2a09; font-size: 24px"
-      >
+      <p class="sub-Header text-center mb-5 font-italic text-uppercase">
         Hệ thống vé điện tử tham quan di tích Huế
       </p>
-      <div class="row align-items-stretch" style="max-width: 1920px">
+      <div class="row align-items-stretch">
         <!-- Cột trái: Ảnh nền -->
-        <div class="col-12 col-md-6 mb-4 d-flex flex-column">
+        <div class="col-6 col-md-6 mb-4 d-flex flex-column">
           <div class="position-relative flex-grow-1">
             <img
               src="ProAssets/pro_new1.png"
@@ -267,538 +237,190 @@
             />
             <div
               class="d-flex justify-content-between"
-              style="max-width: 8.25rem; object-fit: cover; gap: 0.5rem"
+              style="max-width: 165px; object-fit: cover; gap: 10px"
             >
               <img
                 src="ProAssets/pro_new2.png"
                 alt="Ảnh nhỏ 1"
                 class="img-thumbnail"
-                style="object-fit: cover"
               />
               <img
                 src="ProAssets/pro_new3.png"
                 alt="Ảnh nhỏ 2"
                 class="img-thumbnail"
-                style="object-fit: cover"
               />
               <img
                 src="ProAssets/pro_new4.png"
                 alt="Ảnh nhỏ 3"
                 class="img-thumbnail"
-                style="object-fit: cover"
               />
               <img
                 src="ProAssets/pro_new5.png"
                 alt="Ảnh nhỏ 4"
                 class="img-thumbnail"
-                style="object-fit: cover"
               />
             </div>
           </div>
         </div>
 
         <!-- Cột phải: Timeline -->
-        <div class="col-12 col-md-6 mb-4 d-flex flex-column">
-          <!-- Timeline Start -->
-          <div
-            class="timeline d-flex flex-column flex-grow-1"
-            style="gap: 10px"
-          >
-            <!-- Item 1 -->
-            <div
-              class="d-flex align-items-start"
-              style="height: 150px; max-width: 641px"
-            >
-              <div
-                class="d-flex flex-column align-items-center"
-                style="height: 136px; margin-right: 10px; position: relative"
-              >
-                <span
-                  class="rounded-circle border"
-                  style="
-                    width: 36px;
-                    height: 36px;
-                    background: #f5f8ff;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
-                  <img
-                    src="IconAssets/icon_nodes.svg"
-                    alt="nodes"
-                    style="width: 24px; height: 24px"
-                  />
-                </span>
-                <span
-                  style="
-                    width: 4px;
-                    height: 93px;
-                    background: #e3e8f0;
-                    display: block;
-                    margin-top: 0.25rem;
-                    position: relative;
-                  "
-                >
-                  <img
-                    src="IconAssets/icon_vector.svg"
-                    alt="vector"
-                    style="
-                      position: absolute;
-                      left: 50%;
-                      top: 0;
-                      transform: translateX(-50%);
-                      width: 4px;
-                      height: 90px;
-                      object-fit: contain;
-                    "
-                  />
-                </span>
-              </div>
-              <div
-                class="d-flex align-items-start flex-grow-1"
-                style="border-radius: 8px"
-              >
-                <div
-                  class="bg-primary text-white rounded"
-                  style="flex: 1 1 0; padding: 16px; border-radius: 10px"
-                >
-                  <div class="font-weight-bold" style="font-size: 16px">
-                    Mua vé mọi lúc mọi nơi
-                  </div>
-                  <div style="font-size: 14px; line-height: 20px">
-                    Khách hàng có thể mua vé trực tiếp tại điểm tham quan hoặc
-                    đặt vé trước qua máy tính, điện thoại, máy tính bảng. Hệ
-                    thống cung cấp nhiều tùy chọn đối tượng và chính sách giá vé
-                    linh hoạt để thuận lợi cho khách hàng và đơn vị lữ hành. Sau
-                    khi thanh toán, vé có thể được xuất in hoặc gửi qua email
-                    hoặc lưu mã QR code trên điện thoại.
-                  </div>
-                </div>
-              </div>
+        <div class="full-pro-des col-6 d-flex flex-column">
+          <div class="pro-des row">
+            <div>
+              <img class="icon-router" src="IconAssets/pro_router_blue.png" />
             </div>
-            <!-- Item 2 -->
-            <div
-              class="d-flex align-items-start"
-              style="height: 120px; max-width: 641px"
-            >
-              <div
-                class="d-flex flex-column align-items-center"
-                style="height: 136px; margin-right: 10px; position: relative"
-              >
-                <span
-                  class="rounded-circle border"
-                  style="
-                    width: 36px;
-                    height: 36px;
-                    background: #f5f8ff;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
-                  <img
-                    src="IconAssets/icon_node2.svg"
-                    alt="nodes"
-                    style="width: 24px; height: 24px"
-                  />
-                </span>
-                <span
-                  style="
-                    width: 4px;
-                    height: 93px;
-                    background: #e3e8f0;
-                    display: block;
-                    margin-top: 0.25rem;
-                    position: relative;
-                  "
-                >
-                  <img
-                    src="IconAssets/icon_vector.svg"
-                    alt="vector"
-                    style="
-                      position: absolute;
-                      left: 50%;
-                      top: 0;
-                      transform: translateX(-50%);
-                      width: 4px;
-                      height: 90px;
-                      object-fit: contain;
-                    "
-                  />
-                </span>
+
+            <div class="item-content1 bg-primary text-white rounded">
+              <div class="pro-HeaderItem1">Mua vé mọi lúc mọi nơi</div>
+              <div class="pro-Item1">
+                Khách hàng có thể mua vé trực tiếp tại điểm tham quan hoặc đặt
+                vé trước qua máy tính, điện thoại, máy tính bảng. Hệ thống cung
+                cấp nhiều tùy chọn đối tượng và chính sách giá vé linh hoạt để
+                thuận lợi cho khách hàng và đơn vị lữ hành. Sau khi thanh toán,
+                vé có thể được xuất in hoặc gửi qua email hoặc lưu mã QR code
+                trên điện thoại.
               </div>
-              <div
-                class="d-flex align-items-start flex-grow-1"
-                style="border-radius: 8px"
-              >
-                <div
-                  class="bg-light rounded"
-                  style="flex: 1 1 0; padding: 16px; border-radius: 10px"
-                >
-                  <div
-                    class="font-weight-bold"
-                    style="font-size: 16px; color: #32343d"
-                  >
-                    Thanh toán thuận tiện
-                  </div>
-                  <div
-                    style="font-size: 14px; color: #32343d; line-height: 20px"
-                  >
-                    Hệ thống Vé điện tử hỗ trợ hầu hết các hình thức thanh toán:
-                    thanh toán trực tuyến qua internet banking, thẻ tín dụng, ví
-                    điện tử; thanh toán trực tiếp bằng tiền mặt; đặt vé trước,
-                    thanh toán sau v.v…
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item 3 -->
-            <div
-              class="d-flex align-items-start"
-              style="height: 100px; max-width: 641px"
-            >
-              <div
-                class="d-flex flex-column align-items-center"
-                style="height: 136px; margin-right: 10px; position: relative"
-              >
-                <span
-                  class="rounded-circle border"
-                  style="
-                    width: 36px;
-                    height: 36px;
-                    background: #f5f8ff;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
-                  <img
-                    src="IconAssets/icon_node2.svg"
-                    alt="nodes"
-                    style="width: 24px; height: 24px"
-                  />
-                </span>
-                <span
-                  style="
-                    width: 4px;
-                    height: 93px;
-                    background: #e3e8f0;
-                    display: block;
-                    margin-top: 0.25rem;
-                    position: relative;
-                  "
-                >
-                  <img
-                    src="IconAssets/icon_vector.svg"
-                    alt="vector"
-                    style="
-                      position: absolute;
-                      left: 50%;
-                      top: 0;
-                      transform: translateX(-50%);
-                      width: 4px;
-                      height: 90px;
-                      object-fit: contain;
-                    "
-                  />
-                </span>
-              </div>
-              <div
-                class="d-flex align-items-start flex-grow-1"
-                style="border-radius: 8px"
-              >
-                <div
-                  class="bg-light rounded"
-                  style="flex: 1 1 0; padding: 16px; border-radius: 10px"
-                >
-                  <div
-                    class="font-weight-bold"
-                    style="font-size: 16px; color: #32343d"
-                  >
-                    Xuất biên lai điện tử nhanh chóng
-                  </div>
-                  <div
-                    style="font-size: 14px; color: #32343d; line-height: 20px"
-                  >
-                    Hệ thống Vé điện tử cho phép khách hàng cung cấp thông tin
-                    để in/nhận biên lai điện tử cho mỗi giao dịch.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item 4 -->
-            <div
-              class="d-flex align-items-start"
-              style="max-height: 140px; max-width: 641px"
-            >
-              <div
-                class="d-flex flex-column align-items-center"
-                style="height: 136px; margin-right: 10px; position: relative"
-              >
-                <span
-                  class="rounded-circle border"
-                  style="
-                    width: 36px;
-                    height: 36px;
-                    background: #f5f8ff;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
-                  <img
-                    src="IconAssets/icon_node2.svg"
-                    alt="nodes"
-                    style="width: 24px; height: 24px"
-                  />
-                </span>
-                <span
-                  style="
-                    width: 4px;
-                    height: 93px;
-                    background: #e3e8f0;
-                    display: block;
-                    margin-top: 0.25rem;
-                    position: relative;
-                  "
-                >
-                  <img
-                    src="IconAssets/icon_vector.svg"
-                    alt="vector"
-                    style="
-                      position: absolute;
-                      left: 50%;
-                      top: 0;
-                      transform: translateX(-50%);
-                      width: 4px;
-                      height: 90px;
-                      object-fit: contain;
-                    "
-                  />
-                </span>
-              </div>
-              <div
-                class="d-flex align-items-start flex-grow-1"
-                style="border-radius: 8px"
-              >
-                <div
-                  class="bg-light rounded"
-                  style="flex: 1 1 0; padding: 16px; border-radius: 10px"
-                >
-                  <div
-                    class="font-weight-bold"
-                    style="font-size: 16px; color: #32343d"
-                  >
-                    Kiểm soát vé linh hoạt
-                  </div>
-                  <div
-                    style="font-size: 14px; color: #32343d; line-height: 20px"
-                  >
-                    Hệ thống Vé điện tử có thể triển khai linh hoạt với nhiều
-                    loại thiết bị kiểm soát vào cửa như: Cổng xoay tự động,
-                    barie tự động, mắt đọc QR code, thiết bị di động v.v… Vé
-                    điện tử được lưu giữ và giám sát thông tin trên hệ thống từ
-                    thời điểm vé được bán ra đến quá trình vé được sử dụng, nâng
-                    cao tính minh bạch, an toàn trong quản lý vé.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item 5 -->
-            <div
-              class="d-flex align-items-start"
-              style="height: 120px; max-width: 641px"
-            >
-              <div
-                class="d-flex flex-column align-items-center"
-                style="height: 136px; margin-right: 10px; position: relative"
-              >
-                <span
-                  class="rounded-circle border"
-                  style="
-                    width: 36px;
-                    height: 36px;
-                    background: #f5f8ff;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
-                  <img
-                    src="IconAssets/icon_node2.svg"
-                    alt="nodes"
-                    style="width: 24px; height: 24px"
-                  />
-                </span>
-                <span
-                  style="
-                    width: 4px;
-                    height: 93px;
-                    background: #e3e8f0;
-                    display: block;
-                    margin-top: 0.25rem;
-                    position: relative;
-                  "
-                >
-                  <img
-                    src="IconAssets/icon_vector.svg"
-                    alt="vector"
-                    style="
-                      position: absolute;
-                      left: 50%;
-                      top: 0;
-                      transform: translateX(-50%);
-                      width: 4px;
-                      height: 90px;
-                      object-fit: contain;
-                    "
-                  />
-                </span>
-              </div>
-              <div
-                class="d-flex align-items-start flex-grow-1"
-                style="border-radius: 8px"
-              >
-                <div
-                  class="bg-light rounded"
-                  style="flex: 1 1 0; padding: 16px; border-radius: 10px"
-                >
-                  <div
-                    class="font-weight-bold"
-                    style="font-size: 16px; color: #32343d"
-                  >
-                    Thống kê, báo cáo trực quan
-                  </div>
-                  <div
-                    style="font-size: 14px; color: #32343d; line-height: 20px"
-                  >
-                    Hệ thống Vé điện tử cung cấp bộ công cụ thống kê trực quan
-                    theo nhiều tiêu chí (đối tượng khách hàng, thời gian, địa
-                    điểm, doanh thu, loại vé …); cho phép theo dõi biến động số
-                    lượng vé bán ra, trạng thái sử dụng, doanh thu tức thời tại
-                    mỗi điểm tham quan.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Button -->
-            <div class="mt-3">
-              <a
-                href="#"
-                class="btn btn-primary font-weight-bold px-4 py-2"
-                style="border-radius: 6px; font-size: 16px"
-                >Tìm hiểu thêm</a
-              >
             </div>
           </div>
-          <!-- Timeline End -->
+
+          <!-- Item 2 -->
+
+          <div class="pro-des row">
+            <div>
+              <img class="icon-router" src="IconAssets/pro_router.png" />
+            </div>
+            <div class="item-content2345 bg-light text-dark rounded">
+              <div class="pro-HeaderItem2345">Thanh toán thuận tiện</div>
+              <div class="pro-Item2345">
+                Hệ thống Vé điện tử hỗ trợ hầu hết các hình thức thanh toán:
+                thanh toán trực tuyến qua internet banking, thẻ tín dụng, ví
+                điện tử; thanh toán trực tiếp bằng tiền mặt; đặt vé trước, thanh
+                toán sau v.v…
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="pro-des row">
+            <div>
+              <img class="icon-router" src="IconAssets/pro_router.png" />
+            </div>
+            <div class="d-flex align-items-start flex-grow-1">
+              <div class="item-content2345 bg-light rounded">
+                <div class="pro-HeaderItem2345">
+                  Xuất biên lai điện tử nhanh chóng
+                </div>
+                <div class="pro-Item2345">
+                  Hệ thống Vé điện tử cho phép khách hàng cung cấp thông tin để
+                  in/nhận biên lai điện tử cho mỗi giao dịch.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="pro-des row">
+            <div>
+              <img
+                src="IconAssets/pro_router.png"
+                style="width: 36px; height: 117px"
+              />
+            </div>
+            <div class="d-flex align-items-start flex-grow-1">
+              <div class="item-content2345 bg-light rounded">
+                <div class="pro-HeaderItem2345">Kiểm soát vé linh hoạt</div>
+                <div class="pro-Item2345">
+                  Hệ thống Vé điện tử có thể triển khai linh hoạt với nhiều loại
+                  thiết bị kiểm soát vào cửa như: Cổng xoay tự động, barie tự
+                  động, mắt đọc QR code, thiết bị di động v.v… Vé điện tử được
+                  lưu giữ và giám sát thông tin trên hệ thống từ thời điểm vé
+                  được bán ra đến quá trình vé được sử dụng, nâng cao tính minh
+                  bạch, an toàn trong quản lý vé.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="pro-des row">
+            <div>
+              <img class="icon-router" src="IconAssets/pro_router.png" />
+            </div>
+            <div class="d-flex align-items-start flex-grow-1">
+              <div class="item-content2345 bg-light rounded">
+                <div class="pro-HeaderItem2345">
+                  Thống kê, báo cáo trực quan
+                </div>
+                <div class="pro-Item2345">
+                  Hệ thống Vé điện tử cung cấp bộ công cụ thống kê trực quan
+                  theo nhiều tiêu chí (đối tượng khách hàng, thời gian, địa
+                  điểm, doanh thu, loại vé …); cho phép theo dõi biến động số
+                  lượng vé bán ra, trạng thái sử dụng, doanh thu tức thời tại
+                  mỗi điểm tham quan.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Button -->
+          <div class="btn-timHieuThem mt-3">
+            <a href="#" class="btn btn-primary font-weight-bold px-4 py-2"
+              >Tìm hiểu thêm</a
+            >
+          </div>
         </div>
       </div>
 
       <!-- About Us Section (Achievements Bar) -->
-      <div class="container px-0">
+      <div class="container px-0" >
         <div
-          class="about-achievements-bar rounded position-relative overflow-hidden"
-          style="
-            background: url('AboutAssets/about_2.png') center/cover no-repeat;
-            border-radius: 30px;
-            max-height: 180px;
-          "
+          class="about-achievements-bar rounded position-relative overflow-hidden" style="margin-top: 50px;"
         >
           <!-- Overlay for better text contrast -->
+          <div class="overlay-aboutBar"></div>
           <div
-            style="
-              position: absolute;
-              inset: 0;
-              background: rgba(255, 123, 41, 0.448);
-              border-radius: 10px;
-              z-index: 1;
-            "
-          ></div>
-          <div
-            class="row align-items-center text-white position-relative"
-            style="z-index: 2; padding: 30px 30px"
-          >
+            class="about-content row align-items-center text-white position-relative">
             <!-- Title section -->
             <div
               class="col-md-4 text-md-left text-center mb-3 mb-md-0"
               style="max-width: max-content"
             >
-              <div class="font-weight-bold" style="font-size: 2rem">
+              <div class="text-veChungToi font-weight-bold">
                 VỀ CHÚNG TÔI
               </div>
-              <div class="text-justify" style="font-size: 1rem">
+              <div class="text-nhungThanhTuu">
                 Những thành tựu chúng tôi đã đạt được
               </div>
             </div>
             <!-- Stats section -->
-            <div
-              class="col-md-8"
-              style="
-                inset: 0;
-                background: #881c014d;
-                border-radius: 10px;
-                z-index: 1;
-              "
-            >
-              <div class="row" style="gap: 0rem">
-                <div class="col-6 col-md-3 mb-2">
-                  <div class="d-flex flex-column" style="max-width: 300px">
-                    <span
-                      class="font-weight-bold d-flex align-items-center justify-content-center"
-                      style="font-size: 1.5rem"
-                    >
-                      25
-                      <i class="bx bx-up-arrow-alt" style="font-size: 1rem"></i>
-                      <span style="font-size: 0.8rem">Năm kinh nghiệm</span>
+            <div class="overlay-about2 col-md-8">
+              <div class="group-kinhNghiem row" >  
+                  <div class="d-flex flex-row" >
+                    <span class="about-num">25
+                  <img src="/IconAssets/arrow_up.svg">
+                      <span class="text-namKinhNghiem">Năm kinh nghiệm</span>
                     </span>
                   </div>
-                </div>
 
-                <div class="col-6 col-md-3 mb-2">
-                  <div class="d-flex flex-column">
-                    <span
-                      class="font-weight-bold d-flex align-items-center justify-content-center"
-                      style="font-size: 1.5rem"
-                    >
-                      300
-                      <i class="bx bx-up-arrow-alt" style="font-size: 1rem"></i>
-                      <span style="font-size: 0.7rem">Khách hàng</span>
+                  <div class="d-flex flex-row" >
+                    <span class="about-num">30
+                  <img src="/IconAssets/arrow_up.svg">
+                      <span class="text-namKinhNghiem">Khách hàng</span>
                     </span>
                   </div>
-                </div>
 
-                <div class="col-6 col-md-3 mb-2">
-                  <div class="d-flex flex-column">
-                    <span
-                      class="font-weight-bold d-flex align-items-center justify-content-center"
-                      style="font-size: 1.5rem"
-                    >
-                      400
-                      <i class="bx bx-up-arrow-alt" style="font-size: 1rem"></i>
-                      <span style="font-size: 0.7rem">Dự án</span>
+                  <div class="d-flex flex-row" >
+                    <span class="about-num">400
+                  <img src="/IconAssets/arrow_up.svg">
+                      <span class="text-namKinhNghiem">Dự án</span>
                     </span>
                   </div>
-                </div>
 
-                <div class="col-6 col-md-3 mb-2">
-                  <div class="d-flex flex-column">
-                    <span
-                      class="font-weight-bold d-flex align-items-center justify-content-center"
-                      style="font-size: 1.5rem"
-                    >
-                      20
-                      <i class="bx bx-up-arrow-alt" style="font-size: 1rem"></i>
-                      <span style="font-size: 0.7rem">Giải thưởng</span>
+                  <div class="d-flex flex-row">
+                    <span class="about-num">20
+                  <img src="/IconAssets/arrow_up.svg">
+                      <span class="text-namKinhNghiem">Giải thưởng</span>
                     </span>
                   </div>
-                </div>
+
               </div>
             </div>
           </div>

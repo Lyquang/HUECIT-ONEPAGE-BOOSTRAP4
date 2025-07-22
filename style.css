@@ -130,7 +130,7 @@
   font-weight: 600;
   line-height: 26px;
   word-wrap: break-word;
-  gap:15px;
+  gap: 15px;
 }
 /* hover in mainNav*/
 /* #mainNav.navbar-nav .nav-item.active .nav-link {
@@ -144,12 +144,199 @@
   border-bottom: 2px solid #ff6200;
 } */
 
+.outer-underline {
+  width: 220px;
+  height: 5px;
+  background: #ffdcd8;
+  border-radius: 3px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.iner-underline {
+  width: 100px;
+  height: 5px;
+  background: #ff9789;
+  border-radius: 3px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.about-achievements-bar {
+  background: url("AboutAssets/about_2.png") center/cover no-repeat;
+  border-radius: 30px;
+  max-height: 180px;
+}
+
+.overlay-about2 {
+  inset: 0;
+  background: #881c014d;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.about-num {
+  color: white;
+  font-size: 40px;
+  font-family: Mulish;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.text-veChungToi {
+  font-size: 2rem;
+  color: white;
+  font-size: 36px;
+  font-family: Mulish;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.text-namKinhNghiem {
+  color: white;
+  font-size: 16px;
+  font-family: Mulish;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.group-kinhNghiem {
+  gap: 30px;
+}
+
+.text-nhungThanhTuu {
+  color: white;
+  font-size: 20px;
+  font-family: Mulish;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.about-content {
+  z-index: 2;
+  padding: 30px 30px;
+  gap: auto;
+}
+
+.overlay-aboutBar {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 123, 41, 0.448);
+  border-radius: 10px;
+  z-index: 1;
+}
+
 .nav-link {
   color: black;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0%;
+}
 
+.sub-Header {
+  color: #7b2a09;
+  font-size: 24px;
+}
+
+.full-pro-des {
+  gap: 10px;
+}
+
+.pro-des {
+  gap: 21px;
+}
+
+.pro-Item1 {
+  color: white;
+  font-size: 14px;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.btn-timHieuThem {
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.item-content1 {
+  flex: 1 1 0;
+  padding: 16px;
+  position: relative; /* Quan trọng để pseudo-element định vị được */
+  height: 136px;
+  width: 641px;
+}
+
+.item-content1::before {
+  content: "";
+  position: absolute;
+  top: 13px; /* Điều chỉnh vị trí theo chiều dọc */
+  left: -10px; /* Nhô ra bên trái */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #0d6efd; /* Cùng màu với bg-primary */
+}
+
+.icon-router {
+  width: 36px;
+  height: 117px;
+}
+
+.item-content2345 {
+  flex: 1 1 0;
+  padding: 16px;
+  position: relative; /* Quan trọng để pseudo-element định vị được */
+  height: 136px;
+  width: 641px;
+}
+
+.item-content2345::before {
+  content: "";
+  position: absolute;
+  top: 13px; /* Điều chỉnh vị trí theo chiều dọc */
+  left: -10px; /* Nhô ra bên trái */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #f8f9fa; /* Cùng màu với bg-primary */
+}
+
+.pro-item {
+  height: 120px;
+  max-width: 641px;
+  gap: 21px;
+  margin-top: 10px;
+}
+.pro-HeaderItem1 {
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+.pro-HeaderItem2345 {
+  color: #32343d;
+  font-size: 16px;
+  font-family: Mulish;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+.pro-Item2345 {
+  color: #32343d;
+  font-size: 14px;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
 }
 
 .footer-gradient {
