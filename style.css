@@ -1,5 +1,5 @@
 * {
-  font-family: "Mulish", sans-serif;
+  font-family: Mulish, sans-serif;
 }
 
 @media (min-width: 1400px) {
@@ -17,7 +17,7 @@
 .right-border {
   color: #735858;
   font-size: 14px;
-  border-right: 2px solid #735858;
+  border-right: 1px solid #735858;
   padding-right: 20px;
 }
 
@@ -106,6 +106,10 @@
   }
 } */
 
+.aboutus-section {
+  border-radius: 10px;
+  margin-top: 50px;
+}
 .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
@@ -126,23 +130,23 @@
   gap: 10px;
 }
 
-#mainNav {
-  max-height: 70px;
+#mainNav .nav-link {
   color: #32343d;
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
-  word-wrap: break-word;
-  gap: 15px;
+  text-decoration: none;
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
 }
-/* hover in mainNav*/
-/* #mainNav.navbar-nav .nav-item.active .nav-link {
-  color: #ff6200 !important; 
-  font-weight: bold;
-  border-bottom: 2px solid #ff6200; 
-} */
 
-#mainNav.navbar-nav .nav-link:hover {
+#mainNav .nav-link:hover {
+  color: #ff6200;
+  border-bottom: 2px solid #ff6200;
+}
+
+/* Khi link có class active */
+#mainNav .nav-link.active {
   color: #ff6200;
   border-bottom: 2px solid #ff6200;
 }
@@ -182,6 +186,7 @@
   position: relative;
   z-index: 1;
 }
+
 #product::before {
   content: "";
   position: absolute;
@@ -238,7 +243,7 @@
 
 .about-achievements-bar {
   background: url("AboutAssets/about_2.png") center/cover no-repeat;
-  border-radius: 30px;
+  border-radius: 10px;
   max-height: 180px;
 }
 
@@ -247,6 +252,8 @@
   background: #881c014d;
   border-radius: 10px;
   z-index: 1;
+  max-width: 892px;
+  margin-left: 60px;
 }
 
 .about-num {
@@ -320,6 +327,7 @@
   border-bottom: 3px solid #ff9789;
 }
 .sub-Header {
+  margin-top: 20px;
   color: #7b2a09;
   font-size: 24px;
   font-weight: 700;
@@ -336,7 +344,7 @@
   word-wrap: break-word;
 }
 .icon-service1 {
-  position: relative; 
+  position: relative;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -346,22 +354,22 @@
   z-index: 2;
 }
 
-.service-card{
-   height: 100%; 
-   width: 100%;
-   padding:20px 25px 20px 25px;
-   border-radius: 10px;
-   border: none;
-   gap: 15px;
-   background-color: white;
+.service-card {
+  height: 100%;
+  width: 100%;
+  padding: 20px 25px 20px 25px;
+  border-radius: 10px;
+  border: none;
+  gap: 15px;
+  background-color: white;
 }
 
-.ser-header-item{
-color: #4C6FFA;
- font-size: 20px;
- font-family: Mulish;
- font-weight: 700;
- word-wrap: break-word;
+.ser-header-item {
+  color: #4c6ffa;
+  font-size: 20px;
+  font-family: Mulish;
+  font-weight: 700;
+  word-wrap: break-word;
 }
 .full-pro-des {
   gap: 10px;
@@ -380,6 +388,8 @@ color: #4C6FFA;
 }
 
 .btn-timHieuThem {
+  display: flex;
+  justify-content: center;
   border-radius: 6px;
   font-size: 16px;
 }
@@ -500,8 +510,80 @@ color: #4C6FFA;
   z-index: 2;
 }
 
-.edu-text-color {
+.edu-header {
   color: #ffe100;
+  font-size: 36px;
+  font-family: Mulish;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.edu-sub-header1 {
+  color: white;
+  font-size: 24px;
+  font-family: Mulish;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.edu-sub-header2 {
+  color: white;
+  font-size: 18px;
+  font-family: Mulish;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.edu-num {
+  color: #ffe100;
+  font-size: 40px;
+  font-family: Mulish;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.edu-group {
+  border-right: 1px solid white;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.sub2-header-edu {
+  border-left: 6px solid #b23b1b;
+  padding-left: 12px;
+  color: #ffe100;
+  font-size: 20px;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 28px;
+  word-wrap: break-word;
+  margin-bottom: 15px;
+}
+
+.course-price{
+color: #E8533F;
+ font-size: 18px;
+ font-family: Mulish;
+ font-weight: 700;
+ line-height: 28px;
+ word-wrap: break-word
+}
+.edu-new-info {
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+.edu-text-dis {
+  color: white;
+  font-size: 16px;
+  font-family: Mulish;
+  font-weight: 600;
+  word-wrap: break-word;
 }
 
 .services-news-bg {

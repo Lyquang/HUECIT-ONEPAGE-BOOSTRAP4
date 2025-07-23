@@ -130,11 +130,13 @@
       </div>
     </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"
+    >
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
-          <img src="/HomeAssets/huecit_logo2.png" height="40" />
+          <img src="/HomeAssets/huecit_logo2.png" height="60" width="204" />
         </a>
 
         <!-- Nút toggle trên mobile -->
@@ -182,10 +184,7 @@
           data-ride="carousel"
           data-interval="5000"
         >
-          <div
-            class="carousel-inner"
-            style="border-radius: 10px; object-fit: cover"
-          >
+          <div class="carousel-inner" style="object-fit: cover">
             <div class="carousel-item active">
               <img
                 src="HomeAssets/home_1.png"
@@ -219,9 +218,9 @@
         </h2>
       </div>
 
-      <p class="sub-Header text-center">
+      <div class="sub-Header text-center">
         Hệ thống vé điện tử tham quan di tích Huế
-      </p>
+      </div>
       <div class="row align-items-stretch" style="margin-top: 50px">
         <!-- Cột trái: Ảnh nền -->
         <div class="col-6 col-md-6 mb-4 d-flex flex-column">
@@ -362,20 +361,19 @@
               </div>
             </div>
           </div>
-          <!-- Button -->
-          <div class="btn-timHieuThem mt-3">
-            <a href="#" class="btn btn-primary font-weight-bold px-4 py-2"
-              >Tìm hiểu thêm</a
-            >
-          </div>
         </div>
+      </div>
+      <!-- Button -->
+      <div class="btn-timHieuThem mt-3">
+        <a href="#" class="btn btn-primary font-weight-bold px-4 py-2"
+          >Tìm hiểu thêm</a
+        >
       </div>
 
       <!-- About Us Section (Achievements Bar) -->
-      <div class="container px-0">
+      <div class="aboutus-section container px-0">
         <div
           class="about-achievements-bar rounded position-relative overflow-hidden"
-          style="margin-top: 50px"
         >
           <!-- Overlay for better text contrast -->
           <div class="overlay-aboutBar"></div>
@@ -393,7 +391,7 @@
               </div>
             </div>
             <!-- Stats section -->
-            <div class="overlay-about2 col-md-8" style="margin-left: 30px">
+            <div class="overlay-about2 col-md-8">
               <div class="group-kinhNghiem row justify-content-end">
                 <div class="d-flex flex-row">
                   <span class="about-num"
@@ -448,13 +446,13 @@
         Chúng tôi luôn đem đến cho bạn những dịch vụ tốt nhất
       </div>
 
-      <div style="padding-top:30px;" class="container">
+      <div style="padding-top: 30px" class="container">
         <div class="row align-items-stretch">
           <div class="col-md-4 mb-4 d-flex">
             <div
               class="shadow-sm service-card d-flex flex-column position-relative"
             >
-              <div style="background-color: #31CFC2;" class="icon-service1">
+              <div style="background-color: #31cfc2" class="icon-service1">
                 <img
                   src="IconAssets/icon_ser_1.svg"
                   alt="Thiết kế mỹ thuật đa phương tiện"
@@ -464,7 +462,7 @@
 
               <div class="ser-header-item">Xây dựng và gia công phần mềm</div>
 
-              <div class="card-text text-justify">
+              <div class="card-text">
                 HueCIT là đơn vị cung cấp dịch vụ gia công phần mềm toàn diện,
                 đẳng cấp và đáp ứng được hầu hết nhu cầu phát triển phần mềm và
                 thiết kế web của khách hàng trong và ngoài nước.
@@ -472,7 +470,7 @@
 
               <div>
                 <a href="#" class="text-danger">
-                  Xem chi tiết <span class="ml-1">➤</span>
+                  Xem chi tiết <span class="ml-1">></span>
                 </a>
               </div>
             </div>
@@ -481,7 +479,7 @@
             <div
               class="shadow-sm service-card d-flex flex-column position-relative"
             >
-              <div style="background-color: #894DD2;" class="icon-service1">
+              <div style="background-color: #894dd2" class="icon-service1">
                 <img
                   src="IconAssets/icon_ser_2.svg"
                   alt="Thiết kế mỹ thuật đa phương tiện"
@@ -489,15 +487,20 @@
                 />
               </div>
 
-              <div class="ser-header-item">Thiết kế mỹ thuật đa phương tiện</div>
+              <div class="ser-header-item">
+                Thiết kế mỹ thuật đa phương tiện
+              </div>
 
-              <div class="card-text text-justify">
-                HueCIT cung cấp các dịch vụ thiết kế đa dạng như: Website (thiết kế giao diện hoặc xây dựng website trọn gói), Logo và biểu tượng, hệ thống nhận diện thương hiệu: slogan, business card, letterhead, envelope, brochure, poster, catalogue,…
+              <div class="card-text">
+                HueCIT cung cấp các dịch vụ thiết kế đa dạng như: Website (thiết
+                kế giao diện hoặc xây dựng website trọn gói), Logo và biểu
+                tượng, hệ thống nhận diện thương hiệu: slogan, business card,
+                letterhead, envelope, brochure, poster, catalogue,…
               </div>
 
               <div>
                 <a href="#" class="text-danger">
-                  Xem chi tiết <span class="ml-1">➤</span>
+                  Xem chi tiết <span class="ml-1">></span>
                 </a>
               </div>
             </div>
@@ -506,7 +509,7 @@
             <div
               class="shadow-sm service-card d-flex flex-column position-relative"
             >
-              <div style="background-color: #FFA14A;" class="icon-service1">
+              <div style="background-color: #ffa14a" class="icon-service1">
                 <img
                   src="IconAssets/icon_ser_3.svg"
                   alt="Thiết kế mỹ thuật đa phương tiện"
@@ -516,7 +519,7 @@
 
               <div class="ser-header-item">Tư vấn giải pháp CNTT</div>
 
-              <div class="card-text text-justify">
+              <div class="card-text">
                 HueCIT là đơn vị cung cấp dịch vụ gia công phần mềm toàn diện,
                 đẳng cấp và đáp ứng được hầu hết nhu cầu phát triển phần mềm và
                 thiết kế web của khách hàng trong và ngoài nước.
@@ -524,7 +527,7 @@
 
               <div>
                 <a href="#" class="text-danger">
-                  Xem chi tiết <span class="ml-1">➤</span>
+                  Xem chi tiết <span class="ml-1">></span>
                 </a>
               </div>
             </div>
@@ -532,10 +535,10 @@
         </div>
         <div class="row align-items-stretch">
           <div class="col-md-4 mb-4 d-flex">
-                      <div
+            <div
               class="shadow-sm service-card d-flex flex-column position-relative"
             >
-              <div style="background-color: #4D6FFF;" class="icon-service1">
+              <div style="background-color: #4d6fff" class="icon-service1">
                 <img
                   src="IconAssets/icon_ser_4.svg"
                   alt="Thiết kế mỹ thuật đa phương tiện"
@@ -545,33 +548,11 @@
 
               <div class="ser-header-item">Truyền thông số</div>
 
-              <div class="card-text text-justify">
-               Thương mại điện tử là xu thế tất yếu của các doanh nghiệp trong Cuộc Cách mạng Công nghiệp 4.0. HueCIT cung cấp các giải pháp và công cụ giúp nâng tầm hình ảnh và thương hiệu của doanh nghiệp trên môi trường Internet.
-              </div>
-
-              <div>
-                <a href="#" class="text-danger">
-                  Xem chi tiết <span class="ml-1">➤</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4 d-flex">
-                  <div
-              class="shadow-sm service-card d-flex flex-column position-relative"
-            >
-              <div style="background-color: #F84960;" class="icon-service1">
-                <img
-                  src="IconAssets/icon_ser_5.svg"
-                  alt="Thiết kế mỹ thuật đa phương tiện"
-                  style="width: 32px; height: 32px"
-                />
-              </div>
-
-              <div class="ser-header-item">Đại lý dịch vụ CNTT</div>
-
-              <div class="card-text text-justify">
-               HueCIT là đại lý chính thức phân phối sản phẩm phần mềm diệt virus của Kasperky và các sản phẩm phần mềm, dịch vụ của Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT) tại Huế.
+              <div class="card-text">
+                Thương mại điện tử là xu thế tất yếu của các doanh nghiệp trong
+                Cuộc Cách mạng Công nghiệp 4.0. HueCIT cung cấp các giải pháp và
+                công cụ giúp nâng tầm hình ảnh và thương hiệu của doanh nghiệp
+                trên môi trường Internet.
               </div>
 
               <div>
@@ -585,7 +566,34 @@
             <div
               class="shadow-sm service-card d-flex flex-column position-relative"
             >
-              <div style="background-color: #48C024;" class="icon-service1">
+              <div style="background-color: #f84960" class="icon-service1">
+                <img
+                  src="IconAssets/icon_ser_5.svg"
+                  alt="Thiết kế mỹ thuật đa phương tiện"
+                  style="width: 32px; height: 32px"
+                />
+              </div>
+
+              <div class="ser-header-item">Đại lý dịch vụ CNTT</div>
+
+              <div class="card-text">
+                HueCIT là đại lý chính thức phân phối sản phẩm phần mềm diệt
+                virus của Kasperky và các sản phẩm phần mềm, dịch vụ của Tập
+                đoàn Bưu chính Viễn thông Việt Nam (VNPT) tại Huế.
+              </div>
+
+              <div>
+                <a href="#" class="text-danger">
+                  Xem chi tiết <span class="ml-1">></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 d-flex">
+            <div
+              class="shadow-sm service-card d-flex flex-column position-relative"
+            >
+              <div style="background-color: #48c024" class="icon-service1">
                 <img
                   src="IconAssets/icon_ser_6.svg"
                   alt="Thiết kế mỹ thuật đa phương tiện"
@@ -595,13 +603,16 @@
 
               <div class="ser-header-item">Cho thuê cơ sở hạ tầng</div>
 
-              <div class="card-text text-justify">
-               HueCIT là đơn vị đầu mối đại diện cho tỉnh Thừa Thiên Huế trong việc hỗ trợ các doanh nghiệp CNTT, các startup CNTT, các nhà đầu tư CNTT khi đến Huế, phát triển công viên phần mềm, hình thành Khu CNTT tập trung cho Tỉnh.
+              <div class="card-text">
+                HueCIT là đơn vị đầu mối đại diện cho tỉnh Thừa Thiên Huế trong
+                việc hỗ trợ các doanh nghiệp CNTT, các startup CNTT, các nhà đầu
+                tư CNTT khi đến Huế, phát triển công viên phần mềm, hình thành
+                Khu CNTT tập trung cho Tỉnh.
               </div>
 
               <div>
                 <a href="#" class="text-danger">
-                  Xem chi tiết <span class="ml-1">➤</span>
+                  Xem chi tiết <span class="ml-1">></span>
                 </a>
               </div>
             </div>
@@ -617,90 +628,37 @@
     >
       <div class="container">
         <div class="row align-items-center mb-5">
-          <div class="col-md-5 mb-3 mb-md-0">
-            <h2
-              class="edu-text-color font-weight-bold display-5 text-uppercase"
-            >
-              Đào tạo
-            </h2>
+          <div class="col-6 mb-3 mb-md-0" style="padding-right: 100px">
+            <div class="edu-header">Đào tạo</div>
 
-            <h5 class="text-light text-justify">
-              Các khóa đào tạo ngắn hạn, Đào tạo nghề, Mỹ thuật đa phương tiện,
-              Lập trình viên quốc tế, Đào tạo cán bộ, CCVC
-            </h5>
+            <span class="edu-sub-header1">
+              Các khóa ngắn hạn, Đào tạo nghề,
+              <span class="edu-sub-header2">
+                Mỹ thuật đa phương tiện, Lập trình viên quốc tế,</span
+              >
+              <span class="edu-sub-header1"> Đào tạo cán bộ, CCVC.</span>
+            </span>
           </div>
 
-          <div class="col-md-7">
+          <div class="col-6">
             <div class="row text-center">
-              <div
-                class="col-4 position-relative d-flex flex-column align-items-center justify-content-center"
-              >
-                <span
-                  class="font-weight-bold"
-                  style="font-size: 2rem; color: #ffe600; line-height: 1"
-                  >99%</span
-                >
-                <p
-                  class="mb-0 text-light font-weight-bold"
-                  style="font-size: 1rem"
-                >
-                  Ra trường có việc làm
-                </p>
-                <!-- Vertical divider line on the right -->
-                <span
-                  class="position-absolute"
-                  style="
-                    right: 0;
-                    top: 15%;
-                    height: 70%;
-                    width: 2px;
-                    background: rgba(255, 255, 255, 0.4);
-                  "
-                ></span>
+              <div class="edu-group col-4">
+                <div class="edu-num">99%</div>
+                <div class="edu-text-dis">Ra trường có việc làm</div>
+              </div>
+              <div class="edu-group col-4">
+                <span class="edu-num">2000+</span>
+                <div class="edu-text-dis">Học viên đã học</div>
               </div>
               <div class="col-4">
-                <span
-                  class="font-weight-bold edu-text-color"
-                  style="font-size: 2rem; color: #ffe600; line-height: 1"
-                  >2000+</span
-                >
-                <p class="mb-0 text-light font-weight-bold">Học viên đã học</p>
-                <span
-                  class="position-absolute"
-                  style="
-                    right: 0;
-                    top: 15%;
-                    height: 70%;
-                    width: 2px;
-                    background: rgba(255, 255, 255, 0.4);
-                  "
-                ></span>
-              </div>
-              <div class="col-4">
-                <span
-                  class="font-weight-bold edu-text-color"
-                  style="font-size: 2rem; color: #ffe600; line-height: 1"
-                  >100+</span
-                >
-                <p class="mb-0 text-light font-weight-bold">Khóa học được mở</p>
+                <div class="edu-num">100+</div>
+                <div class="edu-text-dis">Khóa học được mở</div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Tin tức đào tạo -->
-
-        <h3
-          class="mb-4 font-weight-bold edu-text-color display-5"
-          style="
-            border-left: 6px solid #b23b1b;
-            padding-left: 12px;
-            color: #ffe600;
-          "
-        >
-          Tin tức đào tạo
-        </h3>
-
+        <div class="sub2-header-edu">Tin tức đào tạo</div>
         <div class="row">
           <div class="col-md-3 mb-4 rounded">
             <div
@@ -713,13 +671,10 @@
                 style="border-radius: 10px"
                 alt=""
               />
-              <p
-                class="card-text text-light text-justify"
-                style="margin-top: 10px"
-              >
+              <div class="edu-new-info text-justify">
                 Khai giảng khóa K8 Lập Trình Web với Java tại HueCIT: Khởi đầu
                 hành trình chinh phục công nghệ
-              </p>
+              </div>
             </div>
           </div>
           <div class="col-md-3 mb-4 rounded">
@@ -733,13 +688,10 @@
                 style="border-radius: 10px"
                 alt=""
               />
-              <p
-                class="card-text text-light text-justify"
-                style="margin-top: 10px"
-              >
+              <div class="edu-new-info text-justify">
                 Hoàn thành Khóa học Đồ Họa 3D – Phát triển nội dung thực tế ảo
                 tại HueCIT theo chương trình hợp tác doanh nghiệp
-              </p>
+              </div>
             </div>
           </div>
           <div class="col-md-3 mb-4 rounded">
@@ -753,13 +705,10 @@
                 style="border-radius: 10px"
                 alt=""
               />
-              <p
-                class="card-text text-light text-justify"
-                style="margin-top: 10px"
-              >
+              <div class="edu-new-info text-justify">
                 HueCIT Khai Giảng Khóa Thương Mại Điện Tử K22 – Cơ Hội Làm Chủ
                 Kỹ Năng Số Hóa
-              </p>
+              </div>
             </div>
           </div>
           <div class="col-md-3 mb-4 rounded">
@@ -773,28 +722,16 @@
                 style="border-radius: 10px"
                 alt=""
               />
-              <p
-                class="card-text text-light text-justify"
-                style="margin-top: 10px"
-              >
+              <div class="edu-new-info text-justify">
                 Hoàn Tất Bảo Vệ Đồ Án Khóa Java K9 – Chiêu Sinh Khóa Java K10
                 Khai Giảng Tháng 01/2025
-              </p>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Thông báo tuyển sinh -->
-        <h3
-          class="mb-4 font-weight-bold edu-text-color display-5"
-          style="
-            border-left: 6px solid #b23b1b;
-            padding-left: 12px;
-            color: #ffe600;
-          "
-        >
-          Thông báo tuyển sinh
-        </h3>
+        <div class="sub2-header-edu">Thông báo tuyển sinh</div>
         <div class="row">
           <div class="col-12 col-md-6 mb-4 d-flex">
             <div
@@ -845,13 +782,13 @@
                   <div
                     class="card bg-price d-flex align-items-center justify-content-center mr-2 mb-2"
                     style="
-                      max-width: 9rem;
+                      max-width: auto;
                       max-height: 2.875rem;
                       border-radius: 0.5rem;
                     "
                   >
                     <p class="mb-0 w-100 text-center" style="font-size: 1rem">
-                      <strong class="text-danger">3.900.000 đ/1 khóa</strong>
+                      <div class="course-price">3.900.000 đ/1 khóa</div>
                     </p>
                   </div>
                   <a
@@ -1306,5 +1243,6 @@
     <script src="jquery-3.5.1.slim.min.js"></script>
     <script src="popper.min.js"></script>
     <script src="bootstrap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
