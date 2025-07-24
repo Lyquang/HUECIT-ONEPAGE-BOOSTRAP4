@@ -665,7 +665,7 @@
   font-size: 16px;
   font-family: Mulish;
   font-weight: 600;
-  word-wrap: break-word;
+  white-space: nowrap;
 }
 
 .services-news-bg {
@@ -699,17 +699,27 @@
   line-height: 24px;
   word-wrap: break-word;
 }
-.separk-title{
-color: #4C6FFA;
- font-size: 24px;
- font-family: Mulish;
- font-weight: 700;
- text-transform: uppercase;
- word-wrap: break-word
+.separk-title {
+  color: #4c6ffa;
+  font-size: 24px;
+  font-family: Mulish;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-wrap: break-word;
 }
 
-.se-park-img{
-    height: 50px;
-    margin-right: 49px;
-    width:160px;
+.se-park-img {
+  height: 50px;
+  margin-right: 49px;
+  width: 160px;
+}
+
+.contact-btn {
+  padding: 6px 16px 6px 16px;
+  color: white;
+  font-size: 14px;
+  font-family: Mulish;
+  font-weight: 600;
+  line-height: 22px;
+  word-wrap: break-word;
 }
