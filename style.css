@@ -561,13 +561,89 @@
   margin-bottom: 15px;
 }
 
-.course-price{
-color: #E8533F;
- font-size: 18px;
+.course-price {
+  color: #e8533f;
+  font-size: 18px;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 28px;
+  word-wrap: break-word;
+  background-color: #FFF0F0;
+  padding: 6px 15px 6px 15px;
+
+  max-width: auto;
+  max-height: 2.875rem;
+  border-radius: 6px;
+}
+
+.register-btn {
+  margin-left: 25px;
+  margin-bottom: 15px;
+color: white;
+ font-size: 16px;
  font-family: Mulish;
  font-weight: 700;
- line-height: 28px;
- word-wrap: break-word
+ line-height: 24px;
+ word-wrap: break-word;
+ padding: 8px 25px 8px 25px;
+ border-radius: 6px;
+
+}
+.price-card {
+  color: #e8533f;
+  font-size: 18px;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+.course-card-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 0.625rem;
+}
+.course-title {
+  color: #4c6ffa;
+  font-size: 18px;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 26px;
+  word-wrap: break-word;
+  margin-bottom: 15px;
+}
+
+.card-body {
+  padding-top: 0 !important;
+}
+
+.course-title {
+  margin-top: 0;
+}
+
+.course-detail {
+  color: #32343d;
+  font-size: 16px;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+.course-attribute {
+  color: #32343d;
+  font-size: 16px;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+.img-edu-news {
+  border-radius: 10px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 .edu-new-info {
   margin-top: 10px;
@@ -577,6 +653,12 @@ color: #E8533F;
   font-weight: 700;
   line-height: 24px;
   word-wrap: break-word;
+}
+
+.course-card {
+  border-radius: 0.625rem;
+  padding: 15px;
+  height: 290px;
 }
 .edu-text-dis {
   color: white;
