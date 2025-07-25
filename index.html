@@ -130,8 +130,8 @@
       </div>
     </nav>
 
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"
+    <nav style="max-height: 71px;"
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm "
     >
       <div class="container">
         <!-- Logo -->
@@ -151,21 +151,18 @@
 
         <!-- Menu collapse -->
         <div class="collapse navbar-collapse">
-          <div
-            class="navbar-nav ml-auto d-flex align-items-center flex-row"
-            id="mainNav"
-          >
-            <a class="nav-link" href="#home">Trang chủ</a>
-            <a class="nav-link" href="#about">Giới thiệu</a>
-            <a class="nav-link" href="#product">Sản phẩm</a>
-            <a class="nav-link" href="#services">Dịch vụ</a>
-            <a class="nav-link" href="#education">Đào tạo</a>
-            <a class="nav-link" href="#news">Tin tức</a>
-            <a class="nav-link" href="#se-park">Công viên phần mềm Huế</a>
-            <a class="nav-link" href="#blog">Blog</a>
-            <a class="nav-link text-dark" href="#" title="Tìm kiếm">
+          <div class="navbar-nav ml-auto d-flexr flex-row" id="mainNav">
+            <div class="nav-link" href="#home">Trang chủ</div>
+            <div class="nav-link" href="#about">Giới thiệu</div>
+            <div class="nav-link" href="#product">Sản phẩm</div>
+            <div class="nav-link" href="#services">Dịch vụ</div>
+            <div class="nav-link" href="#education">Đào tạo</div>
+            <div class="nav-link" href="#news">Tin tức</div>
+            <div class="nav-link" href="#se-park">Công viên phần mềm Huế</div>
+            <div class="nav-link" href="#blog">Blog</div>
+            <div class="nav-link text-dark" href="#" title="Tìm kiếm">
               <i class="bx bx-search" style="font-size: 1.5rem"></i>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -229,24 +226,24 @@
               src="ProAssets/pro_new1.png"
               alt="Sản phẩm chính"
               class="img-fluid rounded shadow w-100 mb-3"
-              style="max-height: 100%; max-width: 100%; object-fit: cover"
+              style="max-height: 100%; max-width: 100%; object-fit: cover; margin-top: 80px;"
             />
             <div
               class="d-flex justify-content-between"
               style="object-fit: cover; gap: 10px"
             >
               <img
-                class="img-des"
+                class="img-des "
                 src="ProAssets/pro_new2.png"
                 alt="Ảnh nhỏ 1"
               />
               <img
-                class="img-des"
+                class="img-des "
                 src="ProAssets/pro_new3.png"
                 alt="Ảnh nhỏ 2"
               />
               <img
-                class="img-des"
+                class="img-des "
                 src="ProAssets/pro_new4.png"
                 alt="Ảnh nhỏ 3"
               />
@@ -393,7 +390,7 @@
             <!-- Stats section -->
             <div class="overlay-about2 col-md-8">
               <div class="group-kinhNghiem row justify-content-end">
-                <div class="d-flex flex-row">
+                <div class="d-flex flex-row g-0">
                   <span class="about-num"
                     >25
                     <img src="/IconAssets/arrow_up.svg" />
@@ -454,6 +451,7 @@
             >
               <div style="background-color: #31cfc2" class="icon-service1">
                 <img
+                  style="box-shadow: 0rem 1rem 1.5rem #31cfc2"
                   src="IconAssets/icon_ser_1.svg"
                   alt="Thiết kế mỹ thuật đa phương tiện"
                   style="width: 32px; height: 32px"
@@ -481,6 +479,7 @@
             >
               <div style="background-color: #894dd2" class="icon-service1">
                 <img
+                  style="box-shadow: 0rem 1rem 1.5rem #894dd2"
                   src="IconAssets/icon_ser_2.svg"
                   alt="Thiết kế mỹ thuật đa phương tiện"
                   style="width: 32px; height: 32px"
@@ -511,6 +510,7 @@
             >
               <div style="background-color: #ffa14a" class="icon-service1">
                 <img
+                  style="box-shadow: 0rem 1rem 1.5rem #ffa14a"
                   src="IconAssets/icon_ser_3.svg"
                   alt="Thiết kế mỹ thuật đa phương tiện"
                   style="width: 32px; height: 32px"
@@ -540,6 +540,7 @@
             >
               <div style="background-color: #4d6fff" class="icon-service1">
                 <img
+                  style="box-shadow: 0rem 1rem 1.5rem #4d6fff"
                   src="IconAssets/icon_ser_4.svg"
                   alt="Thiết kế mỹ thuật đa phương tiện"
                   style="width: 32px; height: 32px"
@@ -568,6 +569,7 @@
             >
               <div style="background-color: #f84960" class="icon-service1">
                 <img
+                  style="box-shadow: 0rem 1rem 1.5rem #f84960"
                   src="IconAssets/icon_ser_5.svg"
                   alt="Thiết kế mỹ thuật đa phương tiện"
                   style="width: 32px; height: 32px"
@@ -595,6 +597,7 @@
             >
               <div style="background-color: #48c024" class="icon-service1">
                 <img
+                  style="box-shadow: 0rem 1rem 1.5rem #48c024"
                   src="IconAssets/icon_ser_6.svg"
                   alt="Thiết kế mỹ thuật đa phương tiện"
                   style="width: 32px; height: 32px"
@@ -736,21 +739,29 @@
                   </div>
                   <div class="course-detail">
                     <span class="course-attribute"
-                      ><img src="/IconAssets/icon_clockl.svg" /> Thời gian
-                      học:</span
+                      ><img
+                        style="margin-right: 8px"
+                        src="/IconAssets/icon_clockl.svg"
+                      />
+                      Thời gian học:</span
                     >
                     Thứ 2,4,6 từ 17h30 - 19h30
                   </div>
                   <div class="course-detail">
                     <span class="course-attribute"
-                      ><img src="/IconAssets/icon_calendar.svg" />Thời gian đào
-                      tạo:</span
+                      ><img
+                        style="margin-right: 8px"
+                        src="/IconAssets/icon_calendar.svg"
+                      />Thời gian đào tạo:</span
                     >
                     5 tháng
                   </div>
                   <div class="course-detail">
                     <span class="course-attribute"
-                      ><img src="/IconAssets/icon_register.svg" />Đăng ký:</span
+                      ><img
+                        style="margin-right: 8px"
+                        src="/IconAssets/icon_register.svg"
+                      />Đăng ký:</span
                     >
                     Từ nay đến hết ngày 30/03/2025
                   </div>
@@ -781,20 +792,31 @@
                   </div>
                   <div class="course-detail">
                     <span class="course-attribute">
-                      <img src="/IconAssets/icon_clockl.svg" /> Thời gian học:
+                      <img
+                        style="margin-right: 8px"
+                        src="/IconAssets/icon_clockl.svg"
+                      />
+                      Thời gian học:
                     </span>
                     Thứ 3,5,7 từ 17h30 - 19h30
                   </div>
                   <div class="course-detail">
                     <span class="course-attribute">
-                      <img src="/IconAssets/icon_calendar.svg" /> Thời gian đào
-                      tạo:
+                      <img
+                        style="margin-right: 8px"
+                        src="/IconAssets/icon_calendar.svg"
+                      />
+                      Thời gian đào tạo:
                     </span>
                     3 tháng
                   </div>
                   <div class="course-detail">
                     <span class="course-attribute">
-                      <img src="/IconAssets/icon_register.svg" /> Đăng ký:
+                      <img
+                        style="margin-right: 8px"
+                        src="/IconAssets/icon_register.svg"
+                      />
+                      Đăng ký:
                     </span>
                     Từ nay đến hết ngày 01/04/2025
                   </div>
@@ -928,37 +950,16 @@
         </div>
         <div
           class="overflow-auto"
-          style="white-space: nowrap; scrollbar-width: none; margin-top:40px;"
+          style="white-space: nowrap; scrollbar-width: none; margin-top: 40px"
         >
           <div class="d-inline-flex align-items-center">
-            <img
-              src="IconAssets/se_park1.png"
-              class="se-park-img"
-            />
-            <img
-              src="IconAssets/se_park2.png"
-               class="se-park-img"
-            />
-            <img
-              src="IconAssets/se_park3.png"
-               class="se-park-img"
-            />
-            <img
-              src="IconAssets/se_park4.png"
-              class="se-park-img"
-            />
-            <img
-              src="IconAssets/se_park5.jpg"
-               class="se-park-img"
-            />
-            <img
-              src="IconAssets/se_park6.png"
-               class="se-park-img"
-            />
-            <img
-              src="IconAssets/se_park7.png"
-               class="se-park-img"
-            />
+            <img src="IconAssets/se_park1.png" class="se-park-img" />
+            <img src="IconAssets/se_park2.png" class="se-park-img" />
+            <img src="IconAssets/se_park3.png" class="se-park-img" />
+            <img src="IconAssets/se_park4.png" class="se-park-img" />
+            <img src="IconAssets/se_park5.jpg" class="se-park-img" />
+            <img src="IconAssets/se_park6.png" class="se-park-img" />
+            <img src="IconAssets/se_park7.png" class="se-park-img" />
           </div>
         </div>
       </div>
@@ -968,52 +969,56 @@
     <footer class="footer-gradient text-light py-4">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 mb-3 text-justify">
+          <div class="col-md-3">
             <h5 class="text-danger">THÔNG TIN LIÊN HỆ</h5>
-            <p>Địa chỉ: 06 Lê Lợi, P. Vĩnh Ninh, TP. Huế</p>
-            <p>
-              Email:
-              <a href="mailto:info@huecit.vn" class="text-light text-justify"
-                >info@huecit.vn</a
-              >
-            </p>
-            <p>
-              Điện thoại:
-              <a href="tel:+842343823650" class="text-danger"
-                >+84.234. 3 823 650</a
-              >
-            </p>
-            <p>© 2025 HueCIT</p>
-            <a href="#" class="contact-btn btn btn-sm bg-danger text-white"
-              >Liên hệ & Góp ý</a
-            >
+
+            <div class="footer-infor">
+              <div>Địa chỉ: 06 Lê Lợi, P. Vĩnh Ninh, TP. Huế</div>
+              <div>
+                Email:
+                <a href="mailto:info@huecit.vn" class="text-light text-justify"
+                  >info@huecit.vn</a
+                >
+              </div>
+
+              <div>
+                Điện thoại:
+                <a href="tel:+842343823650" class="text-danger"
+                  >+84.234. 3 823 650</a
+                >
+              </div>
+              <div>© 2025 HueCIT</div>
+              <div href="#" class="contact-btn bg-danger">
+                <div class="btn-text">Liên hệ & Góp ý</div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3">
             <h5 class="text-danger">GIỚI THIỆU</h5>
-            <ul class="list-unstyled">
-              <li>• Giải thưởng</li>
-              <li>• Chức năng và nhiệm vụ</li>
-              <li>• Đối tác</li>
-              <li>• Dự án</li>
-            </ul>
+            <div class="footer-infor">
+              <div>• Giải thưởng</div>
+              <div>• Chức năng và nhiệm vụ</div>
+              <div>• Đối tác</div>
+              <div>• Dự án</div>
+            </div>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3">
             <h5 class="text-danger">DỊCH VỤ</h5>
-            <ul class="list-unstyled">
-              <li>• Tư vấn giải pháp CNTT</li>
-              <li>• Xây dựng phần mềm</li>
-              <li>• Gia công phần mềm</li>
-              <li>• Thiết kế UI/UX</li>
-              <li>• Truyền thông số</li>
-            </ul>
+            <div class="footer-infor">
+              <div>• Tư vấn giải pháp CNTT</div>
+              <div>• Xây dựng phần mềm</div>
+              <div>• Gia công phần mềm</div>
+              <div>• Thiết kế UI/UX</div>
+              <div>• Truyền thông số</div>
+            </div>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3">
             <h5 class="text-danger">SẢN PHẨM</h5>
-            <ul class="list-unstyled">
-              <li>• Sản phẩm phần mềm</li>
-              <li>• Sản phẩm chuyển đổi số</li>
-              <li>• Ứng dụng di động</li>
-            </ul>
+            <div class="footer-infor">
+              <div>• Sản phẩm phần mềm</div>
+              <div>• Sản phẩm chuyển đổi số</div>
+              <div>• Ứng dụng di động</div>
+            </div>
             <a
               href="#home"
               class="btn rounded-circle shadow-lg"
