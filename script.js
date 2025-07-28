@@ -1,15 +1,19 @@
-
-
 window.addEventListener("DOMContentLoaded", function () {
   const loader = document.getElementById("loader");
   const mainContent = document.getElementById("main-content");
 
-  // Hiển thị loader trong 3 giây rồi ẩn đi
+  // Giữ loader trong ít nhất 3 giây
+setTimeout(() => {
+  loader.classList.add("fade-out");
   setTimeout(() => {
+    // ẩn loader khỏi display
     loader.style.display = "none";
+    // hiển thị khối mainContent như một div, block
     mainContent.style.display = "block";
-  }, 3000); // 3 giây = 3000ms
+  }, 500); // chờ hiệu ứng fade-out xong
+}, 3000);
 });
+
 
 /*========== scroll sections active link ==========*/
 let sections = document.querySelectorAll('section');
