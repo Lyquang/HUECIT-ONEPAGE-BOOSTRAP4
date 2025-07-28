@@ -1,5 +1,15 @@
 
 
+window.addEventListener("DOMContentLoaded", function () {
+  const loader = document.getElementById("loader");
+  const mainContent = document.getElementById("main-content");
+
+  // Hiển thị loader trong 3 giây rồi ẩn đi
+  setTimeout(() => {
+    loader.style.display = "none";
+    mainContent.style.display = "block";
+  }, 3000); // 3 giây = 3000ms
+});
 
 /*========== scroll sections active link ==========*/
 let sections = document.querySelectorAll('section');

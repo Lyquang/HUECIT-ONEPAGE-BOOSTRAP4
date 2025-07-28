@@ -25,6 +25,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body style="font-family: Mulish">
+    <div id="loader">
+      <div class="spinner"></div>
+      <p class="text-white fw-bold">Đang tải...</p>
+    </div>
+
     <nav
       class="navbar navbar-expand-sm"
       style="background-color: #f1ebe9; max-height: 40px"
@@ -375,9 +380,7 @@
 
       <!-- About Us Section (Achievements Bar) -->
       <div class="aboutus-section container px-0">
-        <div
-          class="about-achievements-bar position-relative overflow-hidden"
-        >
+        <div class="about-achievements-bar position-relative overflow-hidden">
           <div class="overlay-aboutBar"></div>
           <div
             class="about-content row align-items-center text-white position-relative"
@@ -962,31 +965,30 @@
     </section>
 
     <!-- SE Park Section -->
-<section id="se-park" class="container-fluid my-4">
-  <div class="container">
-    <div class="separk-title d-flex justify-content-center">
-      Công viên phần mềm Huế
-    </div>
+    <section id="se-park" class="container-fluid my-4">
+      <div class="container">
+        <div class="separk-title d-flex justify-content-center">
+          Công viên phần mềm Huế
+        </div>
 
-    <div class="se-park-slider-container">
-      <div class="se-park-slider d-inline-flex align-items-center">
-        <img src="IconAssets/se_park1.png" class="se-park-img" />
-        <img src="IconAssets/se_park2.png" class="se-park-img" />
-        <img src="IconAssets/se_park3.png" class="se-park-img" />
-        <img src="IconAssets/se_park4.png" class="se-park-img" />
-        <img src="IconAssets/se_park5.jpg" class="se-park-img" />
-        <img src="IconAssets/se_park6.png" class="se-park-img" />
-        <img src="IconAssets/se_park7.png" class="se-park-img" />
-        <img src="./SEPAssets/sep_8.png" class="se-park-img" />
-        <img src="./SEPAssets/sep_9.png" class="se-park-img" />
-        <!-- Lặp lại để tạo hiệu ứng liên tục -->
-        <img src="IconAssets/se_park1.png" class="se-park-img" />
-        <img src="IconAssets/se_park2.png" class="se-park-img" />
+        <div class="se-park-slider-container">
+          <div class="se-park-slider d-inline-flex align-items-center">
+            <img src="IconAssets/se_park1.png" class="se-park-img" />
+            <img src="IconAssets/se_park2.png" class="se-park-img" />
+            <img src="IconAssets/se_park3.png" class="se-park-img" />
+            <img src="IconAssets/se_park4.png" class="se-park-img" />
+            <img src="IconAssets/se_park5.jpg" class="se-park-img" />
+            <img src="IconAssets/se_park6.png" class="se-park-img" />
+            <img src="IconAssets/se_park7.png" class="se-park-img" />
+            <img src="./SEPAssets/sep_8.png" class="se-park-img" />
+            <img src="./SEPAssets/sep_9.png" class="se-park-img" />
+            <!-- Lặp lại để tạo hiệu ứng liên tục -->
+            <img src="IconAssets/se_park1.png" class="se-park-img" />
+            <img src="IconAssets/se_park2.png" class="se-park-img" />
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Footer -->
     <footer class="footer-gradient text-light py-4">
@@ -1019,28 +1021,63 @@
           <div class="col-md-3">
             <h5 class="text-danger">GIỚI THIỆU</h5>
             <div class="footer-infor">
-              <div> <img class="footer-dot" src ="./IconAssets/icon_dot.svg"> Giải thưởng</div>
-              <div><img class="footer-dot" src ="./IconAssets/icon_dot.svg"> Chức năng và nhiệm vụ</div>
-              <div><img class="footer-dot" src ="./IconAssets/icon_dot.svg"> Đối tác</div>
-              <div><img class="footer-dot" src ="./IconAssets/icon_dot.svg"> Dự án</div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" /> Giải
+                thưởng
+              </div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" /> Chức
+                năng và nhiệm vụ
+              </div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" /> Đối
+                tác
+              </div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" /> Dự án
+              </div>
             </div>
           </div>
           <div class="col-md-3">
             <h5 class="text-danger">DỊCH VỤ</h5>
             <div class="footer-infor">
-              <div><img class="footer-dot" src ="./IconAssets/icon_dot.svg">Tư vấn giải pháp CNTT</div>
-              <div><img class="footer-dot" src ="./IconAssets/icon_dot.svg"> Xây dựng phần mềm</div>
-              <div><img class="footer-dot" src ="./IconAssets/icon_dot.svg">Gia công phần mềm</div>
-              <div><img class="footer-dot" src ="./IconAssets/icon_dot.svg"> Thiết kế UI/UX</div>
-              <div><img class="footer-dot" src ="./IconAssets/icon_dot.svg"> Truyền thông số</div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" />Tư vấn
+                giải pháp CNTT
+              </div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" /> Xây
+                dựng phần mềm
+              </div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" />Gia
+                công phần mềm
+              </div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" /> Thiết
+                kế UI/UX
+              </div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" />
+                Truyền thông số
+              </div>
             </div>
           </div>
           <div class="col-md-3">
             <h5 class="text-danger">SẢN PHẨM</h5>
             <div class="footer-infor">
-              <div><img class="footer-dot" src ="./IconAssets/icon_dot.svg"> Sản phẩm phần mềm</div>
-              <div><img class="footer-dot" src ="./IconAssets/icon_dot.svg"> Sản phẩm chuyển đổi số</div>
-              <div><img class="footer-dot" src ="./IconAssets/icon_dot.svg"> Ứng dụng di động</div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" /> Sản
+                phẩm phần mềm
+              </div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" /> Sản
+                phẩm chuyển đổi số
+              </div>
+              <div>
+                <img class="footer-dot" src="./IconAssets/icon_dot.svg" /> Ứng
+                dụng di động
+              </div>
             </div>
             <a
               href="#home"

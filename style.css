@@ -2,6 +2,40 @@
   font-family: Mulish, sans-serif;
 }
 
+/* Loader full màn hình */
+#loader {
+  position: fixed;  
+  inset: 0;
+  background: url(./HomeAssets/Full_loading.png) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* Vòng quay */
+.spinner {
+  width: 60px;
+  height: 60px;
+  margin-top: 580px;
+  border: 10px solid #f3f3f3;
+  border-top: 6px solid #ff6200;
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Hiệu ứng quay */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1450px;
