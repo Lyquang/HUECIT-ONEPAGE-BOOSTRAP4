@@ -4,6 +4,8 @@
 
 /* Loader full màn hình */
 #loader {
+  overflow: hidden;
+  height: 100%;
   position: fixed;  
   inset: 0;
   background: url(./HomeAssets/Full_loading.png) center/cover no-repeat;
@@ -12,7 +14,7 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  overflow: hidden;
+
 }
 
 /* Vòng quay */
