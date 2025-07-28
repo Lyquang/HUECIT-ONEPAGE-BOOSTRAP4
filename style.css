@@ -132,13 +132,16 @@
 
 #mainNav .nav-link {
   color: #32343d;
+  display: flex;
+  align-content: center;
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
   text-decoration: none;
   padding-bottom: 2px;
   transition: color 0.2s ease;
-  padding-bottom :30px;
+  padding-bottom :20px;
+  padding-top: 20px;
   margin-right: 15px;
 }
 
@@ -210,7 +213,7 @@
   width: 165px;
   height: 100px;
   border-radius: 10px;
-  box-shadow: 0rem 1rem 1.5rem rgb(196, 189, 189);
+  box-shadow: 0rem 2px 2px rgb(196, 189, 189);
 }
 
 .icon-wrapper {
@@ -719,6 +722,35 @@
   margin-right: 49px;
   width: 160px;
 }
+
+.se-park-img {
+  height: 50px;
+  width: 160px;
+  margin-right: 49px;
+  flex-shrink: 0;
+}
+
+.se-park-slider-container {
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+  white-space: nowrap;
+}
+
+.se-park-slider {
+  display: inline-flex;
+  animation: scroll-slide 30s linear infinite;
+}
+
+@keyframes scroll-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 
 .contact-btn {
   word-wrap: break-word;

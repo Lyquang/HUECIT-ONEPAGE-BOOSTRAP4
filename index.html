@@ -130,8 +130,9 @@
       </div>
     </nav>
 
-    <nav style="max-height: 71px;"
-      class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm "
+    <nav
+      style="max-height: 71px"
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"
     >
       <div class="container">
         <!-- Logo -->
@@ -151,7 +152,7 @@
 
         <!-- Menu collapse -->
         <div class="collapse navbar-collapse">
-          <div class="navbar-nav ml-auto d-flexr flex-row" id="mainNav">
+          <div class="navbar-nav ml-auto d-flex flex-row" id="mainNav">
             <div class="nav-link" href="#home">Trang chủ</div>
             <div class="nav-link" href="#about">Giới thiệu</div>
             <div class="nav-link" href="#product">Sản phẩm</div>
@@ -226,24 +227,29 @@
               src="ProAssets/pro_new1.png"
               alt="Sản phẩm chính"
               class="img-fluid rounded shadow w-100 mb-3"
-              style="max-height: 100%; max-width: 100%; object-fit: cover; margin-top: 80px;"
+              style="
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: cover;
+                margin-top: 80px;
+              "
             />
             <div
               class="d-flex justify-content-between"
               style="object-fit: cover; gap: 10px"
             >
               <img
-                class="img-des "
+                class="img-des"
                 src="ProAssets/pro_new2.png"
                 alt="Ảnh nhỏ 1"
               />
               <img
-                class="img-des "
+                class="img-des"
                 src="ProAssets/pro_new3.png"
                 alt="Ảnh nhỏ 2"
               />
               <img
-                class="img-des "
+                class="img-des"
                 src="ProAssets/pro_new4.png"
                 alt="Ảnh nhỏ 3"
               />
@@ -623,7 +629,7 @@
         </div>
       </div>
     </section>
-
+    <!-- dao tao -->
     <section
       id="education"
       class="container-fluid rounded education-bg"
@@ -660,7 +666,15 @@
           </div>
         </div>
 
-        <div class="sub2-header-edu">Tin tức đào tạo</div>
+        <div class="d-flex justify-content-between">
+          <div class="sub2-header-edu">Tin tức đào tạo</div>
+
+          <div class="-content-flex-end">
+            <img src="./IconAssets/icon_to_left.svg" />
+            <img src="./IconAssets/icon_to_right.svg" />
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-md-3 mb-4 rounded">
             <div
@@ -725,7 +739,14 @@
         </div>
 
         <!-- Thông báo tuyển sinh -->
-        <div class="sub2-header-edu">Thông báo tuyển sinh</div>
+        <div class="d-flex justify-content-between">
+          <div class="sub2-header-edu">Thông báo tuyển sinh</div>
+
+          <div class="-content-flex-end">
+            <img src="./IconAssets/icon_to_left.svg" />
+            <img src="./IconAssets/icon_to_right.svg" />
+          </div>
+        </div>
         <div class="row">
           <div class="col-12 col-md-6 mb-4 d-flex">
             <div
@@ -843,7 +864,7 @@
     <section
       id="news"
       class="container-fluid services-news-bg"
-      style="padding: 50px"
+      style="padding: 40px"
     >
       <div class="container">
         <div class="pro-header-bg d-flex justify-content-center">
@@ -943,27 +964,31 @@
     </section>
 
     <!-- SE Park Section -->
-    <section id="se-park" class="container-fluid my-5" style="padding: 50px">
-      <div class="container">
-        <div class="separk-title d-flex justify-content-center">
-          Công viên phần mềm Huế
-        </div>
-        <div
-          class="overflow-auto"
-          style="white-space: nowrap; scrollbar-width: none; margin-top: 40px"
-        >
-          <div class="d-inline-flex align-items-center">
-            <img src="IconAssets/se_park1.png" class="se-park-img" />
-            <img src="IconAssets/se_park2.png" class="se-park-img" />
-            <img src="IconAssets/se_park3.png" class="se-park-img" />
-            <img src="IconAssets/se_park4.png" class="se-park-img" />
-            <img src="IconAssets/se_park5.jpg" class="se-park-img" />
-            <img src="IconAssets/se_park6.png" class="se-park-img" />
-            <img src="IconAssets/se_park7.png" class="se-park-img" />
-          </div>
-        </div>
+<section id="se-park" class="container-fluid my-4">
+  <div class="container">
+    <div class="separk-title d-flex justify-content-center">
+      Công viên phần mềm Huế
+    </div>
+
+    <div class="se-park-slider-container">
+      <div class="se-park-slider d-inline-flex align-items-center">
+        <img src="IconAssets/se_park1.png" class="se-park-img" />
+        <img src="IconAssets/se_park2.png" class="se-park-img" />
+        <img src="IconAssets/se_park3.png" class="se-park-img" />
+        <img src="IconAssets/se_park4.png" class="se-park-img" />
+        <img src="IconAssets/se_park5.jpg" class="se-park-img" />
+        <img src="IconAssets/se_park6.png" class="se-park-img" />
+        <img src="IconAssets/se_park7.png" class="se-park-img" />
+        <img src="./SEPAssets/sep_8.png" class="se-park-img" />
+        <img src="./SEPAssets/sep_9.png" class="se-park-img" />
+        <!-- Lặp lại để tạo hiệu ứng liên tục -->
+        <img src="IconAssets/se_park1.png" class="se-park-img" />
+        <img src="IconAssets/se_park2.png" class="se-park-img" />
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="footer-gradient text-light py-4">
@@ -996,28 +1021,28 @@
           <div class="col-md-3">
             <h5 class="text-danger">GIỚI THIỆU</h5>
             <div class="footer-infor">
-              <div>• Giải thưởng</div>
-              <div>• Chức năng và nhiệm vụ</div>
-              <div>• Đối tác</div>
-              <div>• Dự án</div>
+              <div> <img src ="./IconAssets/icon_dot.svg"> Giải thưởng</div>
+              <div><img src ="./IconAssets/icon_dot.svg"> Chức năng và nhiệm vụ</div>
+              <div><img src ="./IconAssets/icon_dot.svg"> Đối tác</div>
+              <div><img src ="./IconAssets/icon_dot.svg"> Dự án</div>
             </div>
           </div>
           <div class="col-md-3">
             <h5 class="text-danger">DỊCH VỤ</h5>
             <div class="footer-infor">
-              <div>• Tư vấn giải pháp CNTT</div>
-              <div>• Xây dựng phần mềm</div>
-              <div>• Gia công phần mềm</div>
-              <div>• Thiết kế UI/UX</div>
-              <div>• Truyền thông số</div>
+              <div><img src ="./IconAssets/icon_dot.svg">Tư vấn giải pháp CNTT</div>
+              <div><img src ="./IconAssets/icon_dot.svg"> Xây dựng phần mềm</div>
+              <div><img src ="./IconAssets/icon_dot.svg"> Gia công phần mềm</div>
+              <div><img src ="./IconAssets/icon_dot.svg"> Thiết kế UI/UX</div>
+              <div><img src ="./IconAssets/icon_dot.svg"> Truyền thông số</div>
             </div>
           </div>
           <div class="col-md-3">
             <h5 class="text-danger">SẢN PHẨM</h5>
             <div class="footer-infor">
-              <div>• Sản phẩm phần mềm</div>
-              <div>• Sản phẩm chuyển đổi số</div>
-              <div>• Ứng dụng di động</div>
+              <div><img src ="./IconAssets/icon_dot.svg"> Sản phẩm phần mềm</div>
+              <div><img src ="./IconAssets/icon_dot.svg"> Sản phẩm chuyển đổi số</div>
+              <div><img src ="./IconAssets/icon_dot.svg"> Ứng dụng di động</div>
             </div>
             <a
               href="#home"
