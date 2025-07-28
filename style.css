@@ -32,7 +32,7 @@
   height: 24px;
   object-fit: cover;
   background: #fff;
-  border: 1px solid #ccc;
+  border: none;
 }
 
 .cross-border {
@@ -106,10 +106,7 @@
   }
 } */
 
-.aboutus-section {
-  border-radius: 10px;
-  margin-top: 50px;
-}
+
 .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
@@ -247,10 +244,17 @@
   margin-top: -1px; /* nối sát vòng tròn */
 }
 
+.aboutus-section {
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
 .about-achievements-bar {
   background: url("AboutAssets/about_2.png") center/cover no-repeat;
   border-radius: 10px;
   max-height: 180px;
+  overflow: hidden; /* ✅ Quan trọng */
+  position: relative;
 }
 
 .overlay-about2 {
@@ -309,8 +313,7 @@
 .overlay-aboutBar {
   position: absolute;
   inset: 0;
-  background: rgba(255, 123, 41, 0.448);
-  border-radius: 10px;
+  background: #D8823BCC;
   z-index: 1;
 }
 
@@ -754,7 +757,7 @@
 
 .contact-btn {
   word-wrap: break-word;
-  width: 150px;
+  width: max-content;
   padding: 6px 16px 6px 16px;
   height: 34px;
   border-radius: 4px;
@@ -777,4 +780,8 @@
 
 .list-unstyled{
   gap: 5px;
+}
+
+.footer-dot{
+  margin-right: 10px;
 }
