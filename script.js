@@ -27,17 +27,17 @@ window.addEventListener("load", function () {
     console.log("elapsedTimeeeeee", elapsedTime);
     const remainingTime = Math.max(0, MIN_LOAD_TIME - elapsedTime);
 
-    // console.log("⏱️ Elapsed time:", elapsedTime + "ms");
-    // console.log("⏳ Waiting remaining time:", remainingTime + "ms");
-
     setTimeout(() => {
       loader.classList.add("fade-out");
 
       // Sau hiệu ứng fade-out (500ms), ẩn hẳn loader và hiển thị nội dung
       setTimeout(() => {
         loader.style.display = "none";
-        mainContent.style.display = "block";
-      }, 500);
+       mainContent.style.display = "block"; // hiện khối chính
+        setTimeout(() => {
+          mainContent.classList.add("fade-in"); // thêm hiệu ứng mờ dần vào
+        }, 100); // delay 1 chút để trình duyệt áp dụng transition
+      }, 1000);
     }, remainingTime);
   }
 

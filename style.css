@@ -6,7 +6,7 @@
 #loader {
   overflow: hidden;
   height: 100%;
-  position: fixed;  
+  position: fixed;
   inset: 0;
   background: url(./HomeAssets/Full_loading.png) center/cover no-repeat;
   display: flex;
@@ -20,6 +20,18 @@
   opacity: 0;
   transition: opacity 1s ease;
   pointer-events: none;
+}
+
+#main-content {
+  opacity: 0;
+  transition: opacity 1s ease;
+  display: none;
+}
+
+#main-content.fade-in {
+  opacity: 1;
+  transition: opacity 5s ease;
+  display: none;
 }
 
 /* Vòng quay */
@@ -38,10 +50,13 @@
 
 /* Hiệu ứng quay */
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
 
 @media (min-width: 1400px) {
   .container {
@@ -147,7 +162,6 @@
   }
 } */
 
-
 .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
@@ -178,7 +192,7 @@
   text-decoration: none;
   padding-bottom: 2px;
   transition: color 0.2s ease;
-  padding-bottom :20px;
+  padding-bottom: 20px;
   padding-top: 20px;
   margin-right: 15px;
 }
@@ -354,7 +368,7 @@
 .overlay-aboutBar {
   position: absolute;
   inset: 0;
-  background: #D8823BCC;
+  background: #d8823bcc;
   z-index: 1;
 }
 
@@ -795,7 +809,6 @@
   }
 }
 
-
 .contact-btn {
   word-wrap: break-word;
   width: max-content;
@@ -819,10 +832,10 @@
   gap: 5px;
 }
 
-.list-unstyled{
+.list-unstyled {
   gap: 5px;
 }
 
-.footer-dot{
+.footer-dot {
   margin-right: 10px;
 }
