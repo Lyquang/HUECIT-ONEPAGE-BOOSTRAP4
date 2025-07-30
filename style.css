@@ -10,29 +10,29 @@
   inset: 0;
   background: url(./HomeAssets/Full_loading.png) center/cover no-repeat;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s linear;
 }
 
 #loader.fade-out {
   opacity: 0;
-  transition: opacity 1s ease;
+   transition: opacity 2s ease;
   pointer-events: none;
 }
 
 #main-content {
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 10s ease;
   display: none;
 }
 
 #main-content.fade-in {
   opacity: 1;
-  transition: opacity 5s ease;
-  display: none;
 }
+
 
 /* Vòng quay */
 .spinner {

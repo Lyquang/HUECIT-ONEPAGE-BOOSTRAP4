@@ -28,15 +28,15 @@ window.addEventListener("load", function () {
     const remainingTime = Math.max(0, MIN_LOAD_TIME - elapsedTime);
 
     setTimeout(() => {
-      loader.classList.add("fade-out");
+      // hiện maincontent       //   // hiện khối chính
 
-      // Sau hiệu ứng fade-out (500ms), ẩn hẳn loader và hiển thị nội dung
+            mainContent.classList.add("fade-in");
+              mainContent.style.display = "block";
+            loader.classList.add("fade-out");
+
       setTimeout(() => {
+        // tắt loader
         loader.style.display = "none";
-       mainContent.style.display = "block"; // hiện khối chính
-        setTimeout(() => {
-          mainContent.classList.add("fade-in"); // thêm hiệu ứng mờ dần vào
-        }, 100); // delay 1 chút để trình duyệt áp dụng transition
       }, 1000);
     }, remainingTime);
   }
