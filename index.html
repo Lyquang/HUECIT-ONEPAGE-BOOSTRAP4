@@ -7,6 +7,15 @@
     <title>HUECIT Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Thêm AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- link animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
@@ -21,6 +30,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -229,13 +239,13 @@
       </section>
 
       <section id="product" class="container my-5">
-        <div class="pro-header-bg d-flex justify-content-center">
+        <div class="pro-header-bg d-flex justify-content-center animate__animated animate__pulse animate__infinite">
           <h2 class="header d-flex justify-content-center">
             <span class="header-underline">Sản phẩm</span>
           </h2>
         </div>
 
-        <div class="sub-Header text-center">
+        <div class="sub-Header text-center animate__animated animate__pulse animate__infinite">
           Hệ thống vé điện tử tham quan di tích Huế
         </div>
         <div class="row align-items-stretch" style="margin-top: 50px">
@@ -252,6 +262,8 @@
                   object-fit: cover;
                   margin-top: 80px;
                 "
+                data-aos="fade-right"
+                data-aos-duration="1900"
               />
               <div
                 class="d-flex justify-content-between"
@@ -261,21 +273,29 @@
                   class="img-des"
                   src="ProAssets/pro_new2.png"
                   alt="Ảnh nhỏ 1"
+                  data-aos="fade-right"
+                  data-aos-duration="1900"
                 />
                 <img
                   class="img-des"
                   src="ProAssets/pro_new3.png"
                   alt="Ảnh nhỏ 2"
+                  data-aos="fade-right"
+                  data-aos-duration="1600"
                 />
                 <img
                   class="img-des"
                   src="ProAssets/pro_new4.png"
                   alt="Ảnh nhỏ 3"
+                  data-aos="fade-right"
+                  data-aos-duration="1300"
                 />
                 <img
                   class="img-des"
                   src="ProAssets/pro_new5.png"
                   alt="Ảnh nhỏ 4"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
                 />
               </div>
             </div>
@@ -283,7 +303,11 @@
 
           <!-- Cột phải: Timeline -->
           <div class="full-pro-des col-6 d-flex flex-column">
-            <div class="pro-des row">
+            <div
+              class="pro-des row"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div class="icon-wrapper">
                 <div class="circle">
                   <div class="inner-dot"></div>
@@ -306,7 +330,11 @@
 
             <!-- Item 2 -->
 
-            <div class="pro-des row">
+            <div
+              class="pro-des row"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+            >
               <div class="icon-wrapper">
                 <div class="circle"></div>
                 <div class="line"></div>
@@ -324,7 +352,11 @@
             </div>
 
             <!-- Item 3 -->
-            <div class="pro-des row">
+            <div
+              class="pro-des row"
+              data-aos="fade-up"
+              data-aos-duration="1600"
+            >
               <div class="icon-wrapper">
                 <div class="circle"></div>
                 <div class="line"></div>
@@ -343,7 +375,11 @@
             </div>
 
             <!-- Item 4 -->
-            <div class="pro-des row">
+            <div
+              class="pro-des row"
+              data-aos="fade-up"
+              data-aos-duration="1900"
+            >
               <div class="icon-wrapper">
                 <div class="circle"></div>
                 <div class="line"></div>
@@ -363,7 +399,11 @@
               </div>
             </div>
             <!-- Item 5 -->
-            <div class="pro-des row">
+            <div
+              class="pro-des row"
+              data-aos="fade-up"
+              data-aos-duration="2200"
+            >
               <div class="icon-wrapper">
                 <div class="circle"></div>
                 <div class="line"></div>
@@ -392,8 +432,12 @@
           >
         </div>
 
-        <!-- About Us Section (Achievements Bar) -->
-        <div class="aboutus-section container px-0">
+        <!-- VE CHUNG TOI -->
+        <div
+          class="aboutus-section container px-0"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <div class="about-achievements-bar position-relative overflow-hidden">
             <div class="overlay-aboutBar"></div>
             <div
@@ -455,17 +499,21 @@
         class="container-fluid services-news-bg rounded"
         style="padding-top: 50px"
       >
-        <div class="pro-header-bg d-flex justify-content-center">
+        <div class="pro-header-bg d-flex justify-content-center animate__animated animate__pulse animate__infinite">
           <h2 class="header d-flex justify-content-center">
             <span class="header-underline">Dịch vụ</span>
           </h2>
         </div>
-        <div class="sub-header-service text-center">
+        <div class="sub-header-service text-center animate__animated animate__pulse animate__infinite">
           Chúng tôi luôn đem đến cho bạn những dịch vụ tốt nhất
         </div>
 
         <div style="padding-top: 30px" class="container">
-          <div class="row align-items-stretch">
+          <div
+            class="row align-items-stretch"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+          >
             <div class="col-md-4 mb-4 d-flex">
               <div
                 class="shadow-sm service-card d-flex flex-column position-relative"
@@ -554,7 +602,11 @@
               </div>
             </div>
           </div>
-          <div class="row align-items-stretch">
+          <div
+            class="row align-items-stretch"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+          >
             <div class="col-md-4 mb-4 d-flex">
               <div
                 class="shadow-sm service-card d-flex flex-column position-relative"
@@ -645,6 +697,7 @@
         </div>
       </section>
       <!-- dao tao -->
+
       <section
         id="education"
         class="container-fluid rounded education-bg"
@@ -652,7 +705,12 @@
       >
         <div class="container">
           <div class="row align-items-center mb-5">
-            <div class="col-6 mb-3 mb-md-0" style="padding-right: 100px">
+            <div
+              class="col-6 mb-3 mb-md-0"
+              style="padding-right: 100px"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+            >
               <div class="edu-header">Đào tạo</div>
               <span class="edu-sub-header1">
                 Các khóa ngắn hạn, Đào tạo nghề,
@@ -663,7 +721,7 @@
               </span>
             </div>
 
-            <div class="col-6">
+            <div class="col-6" data-aos="fade-left" data-aos-duration="3000">
               <div class="row text-center">
                 <div class="edu-group col-4">
                   <div class="edu-num">99%</div>
@@ -681,7 +739,11 @@
             </div>
           </div>
 
-          <div class="d-flex justify-content-between">
+          <div
+            class="d-flex justify-content-between"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+          >
             <div class="sub2-header-edu">Tin tức đào tạo</div>
 
             <div class="-content-flex-end">
@@ -690,7 +752,7 @@
             </div>
           </div>
 
-          <div class="row">
+          <div class="row" data-aos="fade-left" data-aos-duration="3000">
             <div class="col-md-3 mb-4 rounded">
               <div
                 class="card h-100"
@@ -754,7 +816,11 @@
           </div>
 
           <!-- Thông báo tuyển sinh -->
-          <div class="d-flex justify-content-between">
+          <div
+            class="d-flex justify-content-between"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+          >
             <div class="sub2-header-edu">Thông báo tuyển sinh</div>
 
             <div class="-content-flex-end">
@@ -762,7 +828,7 @@
               <img src="./IconAssets/icon_to_right.svg" />
             </div>
           </div>
-          <div class="row">
+          <div class="row" data-aos="fade-left" data-aos-duration="3000">
             <div class="col-12 col-md-6 mb-4 d-flex">
               <div
                 class="course-card card flex-column flex-md-row align-items-start"
@@ -807,13 +873,14 @@
                   <div
                     class="d-flex flex-wrap align-items-center"
                     style="margin-top: 40px"
+                    
                   >
                     <div
                       class="price-card d-flex align-items-center justify-content-center"
                     >
-                      <p class="course-price">3.900.000 đ/1 khóa</p>
+                      <p class="course-price animate__animated animate__bounce animate__infinite">3.900.000 đ/1 khóa</p>
                     </div>
-                    <div href="#" class="register-btn btn-primary">Đăng ký</div>
+                    <div href="#" class="register-btn btn-primary  animate__animated animate__bounce animate__infinite">Đăng ký</div>
                   </div>
                 </div>
               </div>
@@ -868,9 +935,9 @@
                     <div
                       class="price-card d-flex align-items-center justify-content-center"
                     >
-                      <p class="course-price">2.900.000 đ/1 khóa</p>
+                      <p class="course-price animate__animated animate__bounce animate__infinite ">2.900.000 đ/1 khóa</p>
                     </div>
-                    <div href="#" class="register-btn btn-primary">Đăng ký</div>
+                    <div href="#" class="register-btn btn-primary animate__animated animate__bounce animate__infinite">Đăng ký</div>
                   </div>
                 </div>
               </div>
@@ -885,13 +952,22 @@
         class="container-fluid services-news-bg"
         style="padding: 40px"
       >
-        <div class="container">
-          <div class="pro-header-bg d-flex justify-content-center">
+        <div class="container" data-aos="fade-left" data-aos-duration="3000">
+          <div
+            class="pro-header-bg d-flex justify-content-center"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+          >
             <h2 class="header d-flex justify-content-center">
               <span class="header-underline">TIN TỨC</span>
             </h2>
           </div>
-          <div class="row" style="margin-top: 30px">
+          <div
+            class="row"
+            style="margin-top: 30px"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+          >
             <div class="col-md-3 mb-4">
               <div
                 class="card h-100 border-0"

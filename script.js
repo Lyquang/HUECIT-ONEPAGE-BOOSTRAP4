@@ -30,9 +30,14 @@ window.addEventListener("load", function () {
     setTimeout(() => {
       // hiện maincontent       //   // hiện khối chính
 
-            mainContent.classList.add("fade-in");
-              mainContent.style.display = "block";
-            loader.classList.add("fade-out");
+      mainContent.classList.add("fade-in");
+      mainContent.style.display = "block";
+      loader.classList.add("fade-out");
+
+      AOS.init({
+        once: false,
+        duration: 1000,
+      }); // ✅ Move this here
 
       setTimeout(() => {
         // tắt loader
