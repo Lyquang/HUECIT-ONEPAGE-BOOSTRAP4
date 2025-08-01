@@ -74,3 +74,32 @@ window.onscroll = () => {
     }
   });
 };
+
+document.getElementById("slideLeft").addEventListener("click", function () {
+  document.getElementById("eduNewsSlider").scrollBy({
+    left: -300, // scroll về trái 300px
+    behavior: "smooth"
+  });
+});
+
+document.getElementById("slideRight").addEventListener("click", function () {
+  document.getElementById("eduNewsSlider").scrollBy({
+    left: 300, // scroll qua phải 300px
+    behavior: "smooth"
+  });
+});
+
+document.getElementById("slideLeft2").addEventListener("click", function () {
+  document.getElementById("courseIT").scrollBy({
+    left: -300, // scroll về trái 300px
+    behavior: "smooth"
+  });
+});
+
+document.getElementById("slideRight2").addEventListener("click", function () {
+  document.getElementById("courseIT").scrollBy({
+    left: 300, // scroll qua phải 300px
+    behavior: "smooth"
+  });
+});
+

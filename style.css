@@ -163,6 +163,10 @@
   }
 } */
 
+ .carousel-item {
+    transition: transform 5s ease, opacity 5s ease !important;
+  }
+
 .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
@@ -628,6 +632,21 @@
   word-wrap: break-word;
   margin-bottom: 15px;
 }
+
+.edu-news-courseIT-row {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.edu-news-courseIT-wrapper {
+  position: relative;
+}
+
+.edu-news-courseIT-row::-webkit-scrollbar {
+  display: none; /* Ẩn thanh cuộn ngang nếu muốn */
+}
+
 
 .course-price {
   color: #e8533f;
