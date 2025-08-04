@@ -1,56 +1,3 @@
-
-window.addEventListener("DOMContentLoaded", () => {
-  const slider = document.getElementById("newsSlider");
-
-  if (!slider) return;
-
-  const scrollStep = 355; // scroll by 300px (roughly 1 card width)
-  const scrollInterval = 4000; // 2 seconds
-
-  setInterval(() => {
-    // Scroll right
-    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
-      // If reached the end, scroll back to start
-      slider.scrollTo({ left: 0, behavior: "smooth" });
-    } else {
-      slider.scrollBy({ left: scrollStep, behavior: "smooth" });
-    }
-  }, scrollInterval);
-});
-
-// window.addEventListener("DOMContentLoaded", () => {
-//   const slider = document.getElementById("newsSlider");
-
-//   if (!slider) return;
-
-//   // Lấy 1 card bất kỳ
-//   const card = slider.querySelector(".col-md-3  card h-100 border-0");
-//   if (!card) return;
-
-//   // Đảm bảo DOM đã render hoàn chỉnh (bắt buộc)
-//   setTimeout(() => {
-//     const style = window.getComputedStyle(card);
-//     const marginRight = parseInt(style.marginRight) || 0;
-//     const cardWidth = card.offsetWidth + marginRight;
-//     console.log("card width", cardWidth);
-
-//     const scrollInterval = 2000; // 2 giây
-
-//     setInterval(() => {
-//       const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
-
-//       if (slider.scrollLeft + cardWidth >= maxScrollLeft) {
-//         // Nếu tới cuối, quay về đầu
-//         slider.scrollTo({ left: 0, behavior: "smooth" });
-//       } else {
-//         // Scroll đúng 1 card
-//         slider.scrollBy({ left: cardWidth, behavior: "smooth" });
-//       }
-//     }, scrollInterval);
-//   }, 100); // Đợi 100ms cho chắc chắn layout đã tính xong
-// });
-
-
 window.addEventListener("load", function () {
   const loader = document.getElementById("loader");
   const mainContent = document.getElementById("main-content");
@@ -84,6 +31,125 @@ window.addEventListener("load", function () {
   }
 
   hideLoader();
+
+  // section Home
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    effect: "slide", // Có thể thay: "fade", "cube", "coverflow", "flip"
+    speed: 1500,
+  });
+});
+
+
+// Swiper cho mục Tin tức đào tạo
+const eduNewsSwiper = new Swiper(".edu-news-swiper", {
+  slidesPerView: 4,
+  loop: true,
+  speed: 600,
+  navigation: {
+    nextEl: "#slideRight",
+    prevEl: "#slideLeft",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+// thong tin giao duc
+new Swiper(".myCourseSwiper", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  speed: 600,
+  loop: true,
+  navigation: {
+    nextEl: "#slideRight2",
+    prevEl: "#slideLeft2",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    576: {
+      slidesPerView: 1,
+    },
+  }
+});
+
+
+
+
+
+
+// section news
+new Swiper(".myNewsSwiper", {
+  slidesPerView: 4,
+  spaceBetween: 24,
+  loop: true,
+  speed: 800,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+
+
+// section SEpark
+
+new Swiper(".seParkSwiper", {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  loop: true,
+  speed: 3000,
+  autoplay: {
+    delay: 0, // không có delay giữa các lần chuyển
+    disableOnInteraction: false,
+  },
+  freeMode: true, // giúp trượt mượt
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    992: {
+      slidesPerView: 5,
+    },
+    1200: {
+      slidesPerView: 6,
+    },
+  },
 });
 
 /*========== scroll sections active link ==========*/
@@ -112,30 +178,30 @@ window.onscroll = () => {
   });
 };
 
-document.getElementById("slideLeft").addEventListener("click", function () {
-  document.getElementById("eduNewsSlider").scrollBy({
-    left: -300, // scroll về trái 300px
-    behavior: "smooth",
-  });
-});
+// document.getElementById("slideLeft").addEventListener("click", function () {
+//   document.getElementById("eduNewsSlider").scrollBy({
+//     left: -355, 
+//     behavior: "smooth",
+//   });
+// });
 
-document.getElementById("slideRight").addEventListener("click", function () {
-  document.getElementById("eduNewsSlider").scrollBy({
-    left: 300, // scroll qua phải 300px
-    behavior: "smooth",
-  });
-});
+// document.getElementById("slideRight").addEventListener("click", function () {
+//   document.getElementById("eduNewsSlider").scrollBy({
+//     left: 355, 
+//     behavior: "smooth",
+//   });
+// });
 
-document.getElementById("slideLeft2").addEventListener("click", function () {
-  document.getElementById("courseIT").scrollBy({
-    left: -300, // scroll về trái 300px
-    behavior: "smooth",
-  });
-});
+// document.getElementById("slideLeft2").addEventListener("click", function () {
+//   document.getElementById("courseIT").scrollBy({
+//     left: -710, 
+//     behavior: "smooth",
+//   });
+// });
 
-document.getElementById("slideRight2").addEventListener("click", function () {
-  document.getElementById("courseIT").scrollBy({
-    left: 300, // scroll qua phải 300px
-    behavior: "smooth",
-  });
-});
+// document.getElementById("slideRight2").addEventListener("click", function () {
+//   document.getElementById("courseIT").scrollBy({
+//     left: 710, 
+//     behavior: "smooth",
+//   });
+// });
