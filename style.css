@@ -640,8 +640,23 @@
 }
 
 .edu-news-courseIT-wrapper {
+  overflow: hidden;
   position: relative;
+  width: 100%;
 }
+
+#newsSlider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+#newsSlider::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
 
 .edu-news-courseIT-row::-webkit-scrollbar {
   display: none; /* Ẩn thanh cuộn ngang nếu muốn */
@@ -820,6 +835,35 @@
   animation: scroll-slide 30s linear infinite;
 }
 
+.news-slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.news-slider-track {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.news-slide {
+  flex: 0 0 100%; /* Hiển thị 1 slide tại 1 thời điểm */
+  padding: 10px;
+}
+
+.news-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.news-row {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+
+
+
 @keyframes scroll-slide {
   from {
     transform: translateX(0);
@@ -859,3 +903,5 @@
 .footer-dot {
   margin-right: 10px;
 }
+
+
