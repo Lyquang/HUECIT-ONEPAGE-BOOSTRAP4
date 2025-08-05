@@ -710,6 +710,22 @@
   width: 100%;
 }
 
+.edu-news-swiper {
+  padding: 0; /* Xóa padding của container Swiper */
+  width: 100%; /* Đảm bảo chiều rộng 100% */
+}
+
+.edu-news-swiper .swiper-wrapper{
+  justify-content: flex-start; /* Loại bỏ căn giữa, đẩy slide sát mép */
+  width: 100%; /* Đảm bảo wrapper lấp đầy */
+}
+
+.edu-news-swiper .swiper-slide{
+  width: auto; /* Tự động điều chỉnh chiều rộng slide */
+  flex-shrink: 0; /* Ngăn slide co lại */
+  box-sizing: border-box; /* Bao gồm padding/border trong chiều rộng */
+}
+
 #newsSlider {
   display: flex;
   flex-wrap: nowrap;
@@ -726,12 +742,30 @@
   display: none; /* Ẩn thanh cuộn ngang nếu muốn */
 }
 
+
+.myCourseSwiper {
+  padding: 0; /* Xóa padding của container Swiper */
+  width: 100%; /* Đảm bảo chiều rộng 100% */
+}
+
+.myCourseSwiper .swiper-wrapper{
+  justify-content: flex-start; /* Loại bỏ căn giữa, đẩy slide sát mép */
+  width: 100%; /* Đảm bảo wrapper lấp đầy */
+}
+
+.myCourseSwiper .swiper-slide{
+  width: auto; /* Tự động điều chỉnh chiều rộng slide */
+  flex-shrink: 0; /* Ngăn slide co lại */
+  box-sizing: border-box; /* Bao gồm padding/border trong chiều rộng */
+}
+
 .img-edu-news {
   border-radius: 10px;
   height: 200px;
-  width: 100%;
+  width: 330px;
   object-fit: cover;
 }
+
 .edu-new-info {
   margin-top: 10px;
   color: white;
@@ -757,6 +791,7 @@
 .bg-price {
   background-color: #fff0f0;
 }
+
 
 /* news Section */
 
@@ -799,6 +834,7 @@
     padding: 15px;
     height: 290px;
     margin-right: 30px;
+    width: 690px;
   }
 
   .card-body {

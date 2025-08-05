@@ -33,24 +33,23 @@ window.addEventListener("load", function () {
   hideLoader();
 
   // section Home
-  const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    effect: "fade", // Có thể thay: "fade", "cube", "coverflow", "flip"
-    speed: 1500,
-  });
+  // const swiper = new Swiper(".mySwiper", {
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 4000,
+  //     disableOnInteraction: false,
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //   },
+  //   effect: "fade",
+  //   speed: 1500,
+  // });
 
   // swiper for product
   const thumbsSwiper = new Swiper(".product-swiper-thumbs", {
     loop: true,
-    spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
@@ -62,6 +61,11 @@ window.addEventListener("load", function () {
     thumbs: {
       swiper: thumbsSwiper,
     },
+    speed: 3000,
+    autoplay: {
+      delay: 0, // không có delay giữa các lần chuyển
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -71,6 +75,7 @@ window.addEventListener("load", function () {
   // Swiper cho mục Tin tức đào tạo
   const eduNewsSwiper = new Swiper(".edu-news-swiper", {
     slidesPerView: 4,
+    spaceBetween: 30,
     loop: true,
     speed: 600,
     navigation: {
