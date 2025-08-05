@@ -15,14 +15,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <!-- Swiper CSS -->
+    <!-- Swiper JS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <link
@@ -52,6 +51,7 @@
     </div>
 
     <div id="main-content" style="display: none">
+      <!-- infor navbar -->
       <nav
         class="navbar navbar-expand-sm"
         style="background-color: #f1ebe9; max-height: 40px"
@@ -167,7 +167,7 @@
           </div>
         </div>
       </nav>
-
+      <!-- router navbar -->
       <nav
         style="max-height: 71px"
         class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"
@@ -206,7 +206,7 @@
           </div>
         </div>
       </nav>
-
+      <!-- Home -->
       <section
         id="home"
         class="container p-0"
@@ -239,6 +239,7 @@
         </div>
       </section>
 
+      <!-- Sản phẩm -->
       <section id="product" class="container my-5">
         <div class="pro-header-bg d-flex justify-content-center">
           <h2 class="header d-flex justify-content-center">
@@ -249,9 +250,9 @@
         <div class="sub-Header text-center">
           Hệ thống vé điện tử tham quan di tích Huế
         </div>
+
         <div class="row align-items-stretch" style="margin-top: 50px">
-          <!-- Cột trái: Ảnh nền -->
-          <div class="col-6 col-md-6 mb-4 d-flex flex-column">
+          <!-- <div class="col-6 col-md-6 mb-4 d-flex flex-column">
             <div class="position-relative flex-grow-1">
               <img
                 src="ProAssets/pro_new1.png"
@@ -298,11 +299,63 @@
                   data-aos="fade-right"
                   data-aos-duration="1000"
                 />
+                <img
+                  class="img-des"
+                  src="ProAssets/pro_new1.png"
+                  alt="Ảnh nhỏ 4"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                />
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-6 col-md-6 mb-4 d-flex flex-column">
+            <div class="swiper product-swiper-main">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./ProAssets/pro_new1.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ProAssets/pro_new2.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ProAssets/pro_new3.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ProAssets/pro_new4.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ProAssets/pro_new5.png" />
+                </div>
+              </div>
+              <div style="margin-top: 50px">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+
+            <div class="swiper product-swiper-thumbs">
+              <div class="swiper-wrapper" style="max-width: 700px">
+                <div class="swiper-slide">
+                  <img class="img-des" src="./ProAssets/pro_new1.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-des" src="./ProAssets/pro_new2.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-des" src="./ProAssets/pro_new3.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-des" src="./ProAssets/pro_new4.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-des" src="./ProAssets/pro_new5.png" />
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Cột phải: Timeline -->
           <div class="full-pro-des col-6 d-flex flex-column">
             <div
               class="pro-des row"
@@ -329,8 +382,6 @@
               </div>
             </div>
 
-            <!-- Item 2 -->
-
             <div
               class="pro-des row"
               data-aos="fade-up"
@@ -352,7 +403,6 @@
               </div>
             </div>
 
-            <!-- Item 3 -->
             <div
               class="pro-des row"
               data-aos="fade-up"
@@ -375,7 +425,6 @@
               </div>
             </div>
 
-            <!-- Item 4 -->
             <div
               class="pro-des row"
               data-aos="fade-up"
@@ -399,7 +448,7 @@
                 </div>
               </div>
             </div>
-            <!-- Item 5 -->
+
             <div
               class="pro-des row"
               data-aos="fade-up"
@@ -426,6 +475,7 @@
             </div>
           </div>
         </div>
+
         <!-- Button -->
         <div class="btn-timHieuThem mt-3">
           <a href="#" class="btn btn-primary font-weight-bold px-4 py-2"
@@ -1125,7 +1175,6 @@
 
           <div class="swiper myCourseSwiper">
             <div class="swiper-wrapper">
-
               <div class="swiper-slide">
                 <div class="course-card card d-flex flex-column flex-md-row">
                   <img class="course-card-img" src="EduAssets/edu_6.png" />
@@ -1190,8 +1239,7 @@
                   >
                     <div>
                       <div class="course-title">
-                       Chiêu sinh khóa Video editing chuyên nghiệp
-
+                        Chiêu sinh khóa Video editing chuyên nghiệp
                       </div>
                       <div class="course-detail">
                         <span class="course-attribute"
@@ -1294,7 +1342,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="swiper-slide">
                 <div class="course-card card d-flex flex-column flex-md-row">
                   <img class="course-card-img" src="./EduAssets/edu_7.png" />
@@ -1303,8 +1351,7 @@
                   >
                     <div>
                       <div class="course-title">
-                       Chiêu sinh khóa Video editing chuyên nghiệp
-
+                        Chiêu sinh khóa Video editing chuyên nghiệp
                       </div>
                       <div class="course-detail">
                         <span class="course-attribute"
@@ -1351,7 +1398,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
