@@ -63,7 +63,7 @@ window.addEventListener("load", function () {
     },
     speed: 3000,
     autoplay: {
-      delay: 0, // không có delay giữa các lần chuyển
+      delay: 5000, // không có delay giữa các lần chuyển
       disableOnInteraction: false,
     },
     navigation: {
