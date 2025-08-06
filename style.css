@@ -247,13 +247,13 @@
 /* product  */
 
 .product-swiper-main {
-  width: 690px;
+  max-width: 100%;
   margin-bottom: 15px;
 }
 
 .product-swiper-main .swiper-slide img {
   height: 400px;
-  width: 690px;
+  width: 100%;
   object-fit: cover;
   margin-top: 80px;
   border-radius: 10px;

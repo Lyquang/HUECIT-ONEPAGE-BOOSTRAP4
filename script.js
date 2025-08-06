@@ -33,19 +33,19 @@ window.addEventListener("load", function () {
   hideLoader();
 
   // section Home
-  // const swiper = new Swiper(".mySwiper", {
-  //   loop: true,
-  //   autoplay: {
-  //     delay: 4000,
-  //     disableOnInteraction: false,
-  //   },
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
-  //   effect: "fade",
-  //   speed: 1500,
-  // });
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    effect: "fade",
+    speed: 1500,
+  });
 
   // swiper for product
   const thumbsSwiper = new Swiper(".product-swiper-thumbs", {
@@ -83,17 +83,29 @@ window.addEventListener("load", function () {
       prevEl: "#slideLeft",
     },
     breakpoints: {
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
       576: {
         slidesPerView: 1,
+        spaceBetween: 20,
       },
       768: {
         slidesPerView: 2,
+        spaceBetween: 20,
       },
-      992: {
+      991: {
         slidesPerView: 3,
+        spaceBetween: 20,
       },
-      1200: {
+      1366: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1920: {
         slidesPerView: 4,
+        spaceBetween: 40,
       },
     },
   });
@@ -109,11 +121,29 @@ window.addEventListener("load", function () {
       prevEl: "#slideLeft2",
     },
     breakpoints: {
-      768: {
-        slidesPerView: 2,
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
       576: {
         slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      991: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      1366: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1920: {
+        slidesPerView: 2,
+        spaceBetween: 30,
       },
     },
   });
@@ -129,14 +159,29 @@ window.addEventListener("load", function () {
       disableOnInteraction: false,
     },
     breakpoints: {
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
       768: {
         slidesPerView: 2,
+        spaceBetween: 0,
       },
-      992: {
+      991: {
         slidesPerView: 3,
+        spaceBetween: 10,
       },
-      1200: {
+      1366: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      1920: {
         slidesPerView: 4,
+        spaceBetween: 24,
       },
     },
   });
@@ -152,19 +197,31 @@ window.addEventListener("load", function () {
       delay: 0, // không có delay giữa các lần chuyển
       disableOnInteraction: false,
     },
-    freeMode: true, // giúp trượt mượt
+    freeMode: true, // giúp trượt mượt 1920 1366 991 768 576 375
     breakpoints: {
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
       576: {
-        slidesPerView: 3,
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
       768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      991: {
         slidesPerView: 4,
+        spaceBetween: 20,
       },
-      992: {
+      1366: {
         slidesPerView: 5,
+        spaceBetween: 40,
       },
-      1200: {
+      1920: {
         slidesPerView: 6,
+        spaceBetween: 40,
       },
     },
   });
