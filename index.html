@@ -168,17 +168,15 @@
         </div>
       </nav>
       <!-- router navbar -->
-      <nav
+
+      <!-- <nav
         style="max-height: 71px"
         class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"
       >
         <div class="container">
-          <!-- Logo -->
           <a class="navbar-brand" href="#">
-            <img src="/HomeAssets/huecit_logo2.png" height="60" width="204" />
+            <img src="/HomeAssets/huecit_logo2.png"/>
           </a>
-
-          <!-- Nút toggle trên mobile -->
           <button
             class="navbar-toggler"
             type="button"
@@ -187,9 +185,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <!-- Menu collapse -->
-          <div class="collapse navbar-collapse">
+          <div class="collapse navbar-lg-collapse">
             <div class="navbar-nav ml-auto d-flex flex-row" id="mainNav">
               <div class="nav-link" href="#home">Trang chủ</div>
               <div class="nav-link" href="#about">Giới thiệu</div>
@@ -205,7 +201,67 @@
             </div>
           </div>
         </div>
+      </nav> -->
+
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"
+      >
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="/HomeAssets/huecit_logo2.png" />
+          </a>
+
+          <!-- Nút toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu collapse -->
+          <ul class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Dịch vụ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Đào tạo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#news">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#se-park">Công viên phần mềm Huế</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#" title="Tìm kiếm">
+                  <i class="bx bx-search" style="font-size: 1.5rem"></i>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
       </nav>
+
       <!-- Home -->
       <section
         id="home"
@@ -251,9 +307,8 @@
           Hệ thống vé điện tử tham quan di tích Huế
         </div>
 
-        <div class="row align-items-stretch" style="margin-top: 50px">
-
-          <div class="col-12 col-md-6 mb-4 d-flex flex-column">
+        <div class="row align-items-stretch d-grid" style="margin-top: 50px">
+          <div class="product-img col-12 col-lg-6 mb-4">
             <div class="swiper product-swiper-main">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -272,14 +327,10 @@
                   <img src="./ProAssets/pro_new5.png" />
                 </div>
               </div>
-              <!-- <div >
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div> -->
             </div>
 
             <div class="swiper product-swiper-thumbs">
-              <div class="swiper-wrapper" style="max-width: 700px">
+              <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img class="img-des" src="./ProAssets/pro_new1.png" />
                 </div>
@@ -299,7 +350,7 @@
             </div>
           </div>
 
-          <div class="full-pro-des col-6 d-flex flex-column">
+          <div class="col-12 col-lg-6 full-pro-des d-flex flex-column">
             <div
               class="pro-des row"
               data-aos="fade-up"
@@ -427,55 +478,52 @@
         </div>
 
         <!-- VE CHUNG TOI -->
-        <div class="aboutus-section container px-0">
-          <div class="about-achievements-bar position-relative overflow-hidden">
-            <div class="overlay-aboutBar"></div>
+
+        <div class="about-achievements-bar px-0">
+          <div class="overlay-aboutBar"></div>
+          <div class="about-content row text-white">
             <div
-              class="about-content row align-items-center text-white position-relative"
+              class="col-12 col-md-4 text-center mb-3 mb-md-0"
+              style="max-width: max-content"
             >
-              <div
-                class="col-md-4 text-md-left text-center mb-3 mb-md-0"
-                style="max-width: max-content"
-              >
-                <div class="text-veChungToi font-weight-bold">VỀ CHÚNG TÔI</div>
-                <div class="text-nhungThanhTuu">
-                  Những thành tựu chúng tôi đã đạt được
-                </div>
+              <div class="text-veChungToi">VỀ CHÚNG TÔI</div>
+              <div class="text-nhungThanhTuu">
+                Những thành tựu chúng tôi đã đạt được
               </div>
+            </div>
 
-              <div class="overlay-about2 col-md-8">
-                <div class="group-kinhNghiem row justify-content-end">
-                  <div class="d-flex flex-row g-0">
-                    <span class="about-num"
-                      >25
-                      <img src="/IconAssets/arrow_up.svg" />
-                      <span class="text-namKinhNghiem">Năm kinh nghiệm</span>
-                    </span>
-                  </div>
+            <div class="col-12 col-md-8 overlay-about2 text-center">
+              <div class="group-kinhNghiem row">
+                <div class="d-flex flex-row g-0">
+                  <span class="about-num"
+                    >25
+                    <img src="/IconAssets/arrow_up.svg" />
+                    <span class="text-namKinhNghiem">Năm kinh nghiệm</span>
+                  </span>
+                </div>
 
-                  <div class="d-flex flex-row">
-                    <span class="about-num"
-                      >30
-                      <img src="/IconAssets/arrow_up.svg" />
-                      <span class="text-namKinhNghiem">Khách hàng</span>
-                    </span>
-                  </div>
+                <div class="d-flex flex-row">
+                  <span class="about-num"
+                    >30
+                    <img src="/IconAssets/arrow_up.svg" />
+                    <span class="text-namKinhNghiem">Khách hàng</span>
+                  </span>
+                </div>
 
-                  <div class="d-flex flex-row">
-                    <span class="about-num"
-                      >400
-                      <img src="/IconAssets/arrow_up.svg" />
-                      <span class="text-namKinhNghiem">Dự án</span>
-                    </span>
-                  </div>
+                <div class="d-flex flex-row">
+                  <span class="about-num"
+                    >400
+                    <img src="/IconAssets/arrow_up.svg" />
+                    <span class="text-namKinhNghiem">Dự án</span>
+                  </span>
+                </div>
 
-                  <div class="d-flex flex-row">
-                    <span class="about-num"
-                      >20
-                      <img src="/IconAssets/arrow_up.svg" />
-                      <span class="text-namKinhNghiem">Giải thưởng</span>
-                    </span>
-                  </div>
+                <div class="d-flex flex-row">
+                  <span class="about-num"
+                    >20
+                    <img src="/IconAssets/arrow_up.svg" />
+                    <span class="text-namKinhNghiem">Giải thưởng</span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -694,35 +742,45 @@
         style="padding-top: 50px; padding-bottom: 50px"
       >
         <div class="container">
-          <div class="row align-items-center mb-5">
-            <div class="col-6 mb-3 mb-md-0" style="padding-right: 100px">
+          <div class="row align-items-center mb-5 justify-content-between">
+            <div class="col-5 text-start">
               <div class="edu-header">Đào tạo</div>
               <span class="edu-sub-header1">
                 Các khóa ngắn hạn, Đào tạo nghề,
                 <span class="edu-sub-header2">
-                  Mỹ thuật đa phương tiện, Lập trình viên quốc tế,</span
-                >
+                  Mỹ thuật đa phương tiện, Lập trình viên quốc tế,
+                </span>
                 <span class="edu-sub-header1"> Đào tạo cán bộ, CCVC.</span>
               </span>
             </div>
 
-            <div class="col-6">
-              <div class="row text-center">
-                <div class="edu-group col-4">
+            <div
+              class="col-7 ms-auto"
+              style="padding-right: 0 !important; margin-right: 0 !important"
+            >
+              <div class="row text-center justify-content-end">
+                <div class="edu-group col-12 col-md-6 col-xl-4">
                   <div class="edu-num">99%</div>
                   <div class="edu-text-dis">Ra trường có việc làm</div>
                 </div>
-                <div class="edu-group col-4">
+                <div class="edu-group col-12 col-md-6 col-xl-4">
                   <span class="edu-num">2000+</span>
                   <div class="edu-text-dis">Học viên đã học</div>
                 </div>
-                <div class="col-4">
+                <div
+                  class="col-12 col-md-12 col-xl-4"
+                  style="
+                    padding-right: 0 !important;
+                    margin-right: 0 !important;
+                  "
+                >
                   <div class="edu-num">100+</div>
                   <div class="edu-text-dis">Khóa học được mở</div>
                 </div>
               </div>
             </div>
           </div>
+
           <!-- tin tức đào tạo -->
           <div class="d-flex justify-content-between">
             <div class="sub2-header-edu">Tin tức đào tạo</div>
@@ -744,7 +802,7 @@
           <div class="edu-news-courseIT-wrapper overflow-hidden">
             <div class="edu-news-swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide" >
+                <div class="swiper-slide">
                   <div
                     class="card h-100"
                     style="background-color: transparent; border: none"
@@ -808,7 +866,7 @@
                   </div>
                 </div>
 
-                <div class="swiper-slide ">
+                <div class="swiper-slide">
                   <!-- Nội dung card giữ nguyên -->
                   <div
                     class="card h-100"
@@ -825,7 +883,7 @@
                   </div>
                 </div>
 
-                <div class="swiper-slide ">
+                <div class="swiper-slide">
                   <div
                     class="card h-100"
                     style="background-color: transparent; border: none"
@@ -841,7 +899,7 @@
                   </div>
                 </div>
 
-                <div class="swiper-slide ">
+                <div class="swiper-slide">
                   <div
                     class="card h-100"
                     style="background-color: transparent; border: none"
@@ -893,228 +951,6 @@
               />
             </div>
           </div>
-
-          <!-- <div class="edu-news-courseIT-wrapper overflow-hidden">
-            <div class="edu-news-courseIT-row d-flex flex-nowrap" id="courseIT">
-              <div
-                class="col-12 col-md-6 mb-4 d-flex course-card card flex-column flex-md-row align-items-start"
-              >
-                <img src="EduAssets/edu_6.png" class="course-card-img" />
-                <div
-                  class="card-body d-flex flex-column justify-content-between"
-                >
-                  <div>
-                    <div class="course-title">
-                      Trở thành Lập trình viên cừ khôi từ con số 0 cùng HueCIT
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute"
-                        ><img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_clockl.svg"
-                        />
-                        Thời gian học:</span
-                      >
-                      Thứ 2,4,6 từ 17h30 - 19h30
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute"
-                        ><img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_calendar.svg"
-                        />Thời gian đào tạo:</span
-                      >
-                      5 tháng
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute"
-                        ><img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_register.svg"
-                        />Đăng ký:</span
-                      >
-                      Từ nay đến hết ngày 30/03/2025
-                    </div>
-                  </div>
-                  <div
-                    class="d-flex flex-wrap align-items-center"
-                    style="margin-top: 40px"
-                  >
-                    <div
-                      class="price-card d-flex align-items-center justify-content-center"
-                    >
-                      <p class="course-price">3.900.000 đ/1 khóa</p>
-                    </div>
-                    <div href="#" class="register-btn btn-primary">Đăng ký</div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-12 col-md-6 mb-4 d-flex course-card card flex-column flex-md-row align-items-start"
-              >
-                <img src="EduAssets/edu_7.png" class="course-card-img" alt="" />
-                <div
-                  class="card-body d-flex flex-column justify-content-between"
-                >
-                  <div>
-                    <div class="course-title">
-                      Chiêu sinh khóa Video editing chuyên nghiệp
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute">
-                        <img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_clockl.svg"
-                        />
-                        Thời gian học:
-                      </span>
-                      Thứ 3,5,7 từ 17h30 - 19h30
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute">
-                        <img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_calendar.svg"
-                        />
-                        Thời gian đào tạo:
-                      </span>
-                      3 tháng
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute">
-                        <img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_register.svg"
-                        />
-                        Đăng ký:
-                      </span>
-                      Từ nay đến hết ngày 01/04/2025
-                    </div>
-                  </div>
-                  <div
-                    class="d-flex flex-wrap align-items-center"
-                    style="margin-top: 40px"
-                  >
-                    <div
-                      class="price-card d-flex align-items-center justify-content-center"
-                    >
-                      <p class="course-price">2.900.000 đ/1 khóa</p>
-                    </div>
-                    <div href="#" class="register-btn btn-primary">Đăng ký</div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-12 col-md-6 mb-4 d-flex course-card card flex-column flex-md-row align-items-start"
-              >
-                <img src="EduAssets/edu_6.png" class="course-card-img" />
-                <div
-                  class="card-body d-flex flex-column justify-content-between"
-                >
-                  <div>
-                    <div class="course-title">
-                      Trở thành Lập trình viên cừ khôi từ con số 0 cùng HueCIT
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute"
-                        ><img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_clockl.svg"
-                        />
-                        Thời gian học:</span
-                      >
-                      Thứ 2,4,6 từ 17h30 - 19h30
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute"
-                        ><img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_calendar.svg"
-                        />Thời gian đào tạo:</span
-                      >
-                      5 tháng
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute"
-                        ><img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_register.svg"
-                        />Đăng ký:</span
-                      >
-                      Từ nay đến hết ngày 30/03/2025
-                    </div>
-                  </div>
-                  <div
-                    class="d-flex flex-wrap align-items-center"
-                    style="margin-top: 40px"
-                  >
-                    <div
-                      class="price-card d-flex align-items-center justify-content-center"
-                    >
-                      <p class="course-price">3.900.000 đ/1 khóa</p>
-                    </div>
-                    <div href="#" class="register-btn btn-primary">Đăng ký</div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-12 col-md-6 mb-4 d-flex course-card card flex-column flex-md-row align-items-start"
-              >
-                <img src="EduAssets/edu_7.png" class="course-card-img" alt="" />
-                <div
-                  class="card-body d-flex flex-column justify-content-between"
-                >
-                  <div>
-                    <div class="course-title">
-                      Chiêu sinh khóa Video editing chuyên nghiệp
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute">
-                        <img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_clockl.svg"
-                        />
-                        Thời gian học:
-                      </span>
-                      Thứ 3,5,7 từ 17h30 - 19h30
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute">
-                        <img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_calendar.svg"
-                        />
-                        Thời gian đào tạo:
-                      </span>
-                      3 tháng
-                    </div>
-                    <div class="course-detail">
-                      <span class="course-attribute">
-                        <img
-                          style="margin-right: 8px"
-                          src="/IconAssets/icon_register.svg"
-                        />
-                        Đăng ký:
-                      </span>
-                      Từ nay đến hết ngày 01/04/2025
-                    </div>
-                  </div>
-                  <div
-                    class="d-flex flex-wrap align-items-center"
-                    style="margin-top: 40px"
-                  >
-                    <div
-                      class="price-card d-flex align-items-center justify-content-center"
-                    >
-                      <p class="course-price">2.900.000 đ/1 khóa</p>
-                    </div>
-                    <div href="#" class="register-btn btn-primary">Đăng ký</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
 
           <div class="swiper myCourseSwiper">
             <div class="swiper-wrapper">

@@ -1,6 +1,9 @@
 * {
   font-family: Mulish, sans-serif;
 }
+html {
+  font-size: 14px;
+}
 
 /* Loader full màn hình */
 #loader {
@@ -55,12 +58,6 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1450px;
   }
 }
 
@@ -135,6 +132,11 @@
   margin-right: 15px;
 }
 
+.navbar-brand img {
+  width: 204px;
+  height: 60px;
+}
+
 #mainNav .nav-link:hover {
   color: #ff6200;
   border-bottom: 2px solid #ff6200;
@@ -146,102 +148,59 @@
   border-bottom: 2px solid #ff6200;
 }
 
-/* Responsive trên mobile (dưới 576px) */
-/* @media (max-width: 576px) {
-  #product .text-center .display-5 {
-    font-size: 1.875rem;
-  }
-
-  #product .text-center .mb-5 {
-    font-size: 1.25rem;
-
-    #product .col-md-6 .position-relative img:first-child {
-      max-height: 18.75rem;
-      max-width: 100%;
-    }
-
-    #product .col-md-6 .position-relative .d-flex {
-      max-width: 100%;
-      flex-wrap: wrap;
-    }
-
-    #product .timeline .d-flex {
-      height: auto;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    #product .timeline .d-flex .flex-column {
-      margin-right: 0;
-      margin-bottom: 1rem;
-    }
-
-    #product .timeline .d-flex .flex-column span:last-child {
-      display: none;
-    }
-
-    .about-achievements-bar {
-      max-height: 15rem;
-      padding: 1rem;
-    }
-
-    .about-achievements-bar .row {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .about-achievements-bar .col-md-4 .font-weight-bold {
-      font-size: 1rem;
-    }
-
-    .about-achievements-bar .col-md-8 .font-weight-bold {
-      font-size: 0.875rem;
-    }
-
-    .about-achievements-bar .col-md-8 span {
-      font-size: 0.625rem;
-    }
-  }
-} */
-
 .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
 }
 
-#home::before {
-  content: "";
-  position: absolute;
-  width: 504.6px;
-  height: 504.6px;
-  border-radius: 50%;
-  background: #f8f8f8; /* Hình tròn bạc */
-  z-index: -1;
-  top: 300px;
-  left: 680px;
+#home {
+  position: relative; /* để tính toạ độ cho pseudo-element dựa trên section */
+  overflow: visible; /* cho phép phần tử con tràn ra ngoài */
 }
 
-/* Cập nhật lại elip trắng giữa */
-#home::after {
+.swiper-home .swiper-slide {
+  position: relative; /* cần cho ::before, ::after bám theo từng slide */
+  overflow: visible; /* tránh bị cắt */
+}
+
+.swiper-home .swiper-slide::before {
   content: "";
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 26vw; /* đường kính ~26% chiều rộng màn hình */
+  height: 26vw; /* đường kính ~26% chiều rộng màn hình */
   border-radius: 50%;
-  background: rgb(255, 255, 255);
-  z-index: 0; /* nằm giữa slide (1) và elip bạc (-1) */
-  top: 400px;
-  left: 780px;
+  /* background-color: red; */
+  background: #f8f8f8;
+  z-index: -1;
+  bottom: -13vw; /* lồi xuống dưới theo tỉ lệ màn hình */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-home .swiper-slide::after {
+  content: "";
+  position: absolute;
+  width: 15.6vw; /* đường kính ~15.6% chiều rộng màn hình */
+  height: 15.6vw;
+  border-radius: 50%;
+  /* background: blue; */
+  background-color: #ffffff;
+  z-index: -1;
+  bottom: -8vw; /* lồi xuống dưới theo tỉ lệ màn hình */
+  left: calc(50% + 0.5vw); /* lệch sang phải theo tỉ lệ màn hình */
+  transform: translateX(-50%);
 }
 
 .swiper-home {
   width: 100%;
   height: 100%;
+  overflow: visible; /* quan trọng để pseudo-element không bị cắt */
 }
 
-.swiper-slide img {
+.swiper-home .swiper-slide img {
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 /* product  */
@@ -259,66 +218,29 @@
   border-radius: 10px;
 }
 
-/* .product-swiper-thumbs {
-  padding: 10px 0;
-} */
-
 .product-swiper-thumbs .swiper-slide {
-  width: 80px;
+  width: 100%;
   opacity: 0.4;
   cursor: pointer;
 }
 
+.product-swiper-thumbs {
+  width: 100%; /* Luôn bằng với main swiper */
+}
+
+.product-swiper-thumbs .swiper-wrapper {
+  width: 100% !important; /* Ghi đè width cứng */
+}
 
 .product-swiper-thumbs .swiper-slide-thumb-active {
   opacity: 1;
 }
 
 .product-swiper-thumbs .swiper-wrapper .swiper-slide .img-des {
-  width: 165px;
-  height: 100px; 
+  width: 95%;
+  height: 100px;
   object-fit: cover;
   border-radius: 5px;
-}
-
-/* Tùy chỉnh nút điều hướng */
-.swiper-button-prev,
-.swiper-button-next {
-  color:white; /* Màu của nút */
-  background-color: rgba(0, 0, 0, 0.5); 
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;  
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 50px;
-}
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.swiper-button-prev {
-  left: 10px;
-}
-
-.swiper-button-next {
-  right: 10px;
-}
-
-/* Ẩn mũi tên mặc định của Swiper nếu không muốn */
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 20px; /* Kích thước mũi tên */
-  font-weight: bold;
 }
 
 #product {
@@ -326,22 +248,34 @@
   z-index: 1;
 }
 
-#product::before {
+.product-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-swiper-main::before {
   content: "";
   position: absolute;
   border-radius: 50%;
-  background: #ffe8e3; /* màu đỏ nhạt mờ */
+  background: #ffe8e3;
   z-index: 0;
   padding: 30px;
   border: 1px solid #ffe8e3;
 }
 
-#product::before {
-  width: 504.6px;
-  height: 504.6px;
-  top: 150px;
-  left: 100px;
+.product-swiper-main::before {
+  content: "";
+  position: absolute;
+  top: -rem; /* tuỳ chỉnh cao thấp */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  background: #ffe8e3;
+  z-index: -1;
 }
+
 
 .icon-wrapper {
   display: flex;
@@ -375,16 +309,29 @@
 }
 
 /* about us section */
-.aboutus-section {
-  border-radius: 10px;
-  margin-top: 50px;
-}
 
 .about-achievements-bar {
   background: url("AboutAssets/about_2.png") center/cover no-repeat;
   border-radius: 10px;
-  max-height: 180px;
-  overflow: hidden; /* ✅ Quan trọng */
+  max-height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.overlay-aboutBar {
+  position: absolute;
+  inset: 0;
+  background: #d8823bcc;
+  z-index: 1;
+}
+
+.about-content {
+  z-index: 2;
+  padding: 30px 30px;
+  gap: auto;
+  align-items: center;
   position: relative;
 }
 
@@ -401,7 +348,7 @@
   display: flex;
   align-items: center;
   color: white;
-  font-size: 40px;
+  font-size: 2.22rem;
   font-weight: 700;
   word-wrap: break-word;
   margin-right: 0px;
@@ -410,7 +357,6 @@
 .text-veChungToi {
   font-size: 2rem;
   color: white;
-  font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -418,38 +364,32 @@
 
 .text-namKinhNghiem {
   color: white;
-  font-size: 16px;
+  font-size: 0.89rem;
   font-weight: 700;
   word-wrap: break-word;
 }
 
 .group-kinhNghiem {
+  display: flex;
+  justify-content: end;
   gap: 30px;
   padding: 5px;
 }
 
 .text-nhungThanhTuu {
   color: white;
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: 600;
   word-wrap: break-word;
 }
 
-.about-content {
-  z-index: 2;
-  padding: 30px 30px;
-  gap: auto;
-}
-
-.overlay-aboutBar {
-  position: absolute;
-  inset: 0;
-  background: #d8823bcc;
-  z-index: 1;
-}
-
 .nav-link {
-  color: black;
+  color: #32343d;
+  font-size: 1rem;
+  font-family: Mulish;
+  font-weight: 600;
+  line-height: 1.44rem;
+  word-wrap: break-word;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0%;
@@ -457,7 +397,7 @@
 
 .header {
   color: #e8533f;
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -567,7 +507,7 @@
   padding: 16px;
   position: relative; /* Quan trọng để pseudo-element định vị được */
   height: 136px;
-  width: 641px;
+  width: min-content;
 }
 
 .item-content2345::before {
@@ -583,31 +523,32 @@
 }
 
 .pro-item {
-  height: 120px;
-  max-width: 641px;
+  height: max-content;
+  width: max-content;
   gap: 21px;
   margin-top: 10px;
 }
+
 .pro-HeaderItem1 {
   color: white;
-  font-size: 16px;
+  font-size: 0.88rem;
   font-family: Inter;
   font-weight: 700;
   word-wrap: break-word;
 }
 .pro-HeaderItem2345 {
   color: #32343d;
-  font-size: 16px;
+  font-size: 0.88rem;
   font-family: Mulish;
   font-weight: 700;
   word-wrap: break-word;
 }
 .pro-Item2345 {
   color: #32343d;
-  font-size: 14px;
+  font-size: 0.77rem;
   font-family: Mulish;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25rem;
   word-wrap: break-word;
 }
 
@@ -655,7 +596,7 @@
 
 .edu-header {
   color: #ffe100;
-  font-size: 36px;
+  font-size: 2rem;
   font-family: Mulish;
   font-weight: 700;
   text-transform: uppercase;
@@ -664,7 +605,7 @@
 
 .edu-sub-header1 {
   color: white;
-  font-size: 24px;
+  font-size: 1.33rem;
   font-family: Mulish;
   font-weight: 400;
   word-wrap: break-word;
@@ -672,7 +613,7 @@
 
 .edu-sub-header2 {
   color: white;
-  font-size: 18px;
+  font-size: 1rem;
   font-family: Mulish;
   font-weight: 400;
   word-wrap: break-word;
@@ -680,7 +621,7 @@
 
 .edu-num {
   color: #ffe100;
-  font-size: 40px;
+  font-size: 2.22rem;
   font-family: Mulish;
   font-weight: 700;
   word-wrap: break-word;
@@ -696,7 +637,7 @@
   border-left: 2px solid #b23b1b;
   padding-left: 12px;
   color: #ffe100;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: Mulish;
   font-weight: 700;
   line-height: 28px;
@@ -715,12 +656,12 @@
   width: 100%; /* Đảm bảo chiều rộng 100% */
 }
 
-.edu-news-swiper .swiper-wrapper{
+.edu-news-swiper .swiper-wrapper {
   justify-content: flex-start; /* Loại bỏ căn giữa, đẩy slide sát mép */
   width: 100%; /* Đảm bảo wrapper lấp đầy */
 }
 
-.edu-news-swiper .swiper-slide{
+.edu-news-swiper .swiper-slide {
   width: auto; /* Tự động điều chỉnh chiều rộng slide */
   flex-shrink: 0; /* Ngăn slide co lại */
   box-sizing: border-box; /* Bao gồm padding/border trong chiều rộng */
@@ -742,18 +683,17 @@
   display: none; /* Ẩn thanh cuộn ngang nếu muốn */
 }
 
-
 .myCourseSwiper {
   padding: 0; /* Xóa padding của container Swiper */
   width: 100%; /* Đảm bảo chiều rộng 100% */
 }
 
-.myCourseSwiper .swiper-wrapper{
+.myCourseSwiper .swiper-wrapper {
   justify-content: flex-start; /* Loại bỏ căn giữa, đẩy slide sát mép */
   width: 100%; /* Đảm bảo wrapper lấp đầy */
 }
 
-.myCourseSwiper .swiper-slide{
+.myCourseSwiper .swiper-slide {
   width: auto; /* Tự động điều chỉnh chiều rộng slide */
   flex-shrink: 0; /* Ngăn slide co lại */
   box-sizing: border-box; /* Bao gồm padding/border trong chiều rộng */
@@ -762,17 +702,17 @@
 .img-edu-news {
   border-radius: 10px;
   height: 200px;
-  width: 330px;
+  width: 100%;
   object-fit: cover;
 }
 
 .edu-new-info {
   margin-top: 10px;
   color: white;
-  font-size: 16px;
+  font-size: 0.88rem;
   font-family: Mulish;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.44rem;
   word-wrap: break-word;
 }
 
@@ -792,18 +732,11 @@
   background-color: #fff0f0;
 }
 
-
-/* news Section */
-
-.myNewsSwiper {
-  width: 100%;
-  padding-top: 10px;
-}
-
 .swiper-slide {
   height: auto;
+  align-items: stretch;
   .course-card-img {
-    width: 260px;
+    max-width: max(13.5vw, 200px);
     height: 260px;
     object-fit: cover;
     border-radius: 0.625rem;
@@ -811,30 +744,30 @@
 
   .course-detail {
     color: #32343d;
-    font-size: 16px;
+    font-size: 0.88rem;
     font-family: Mulish;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.33rem;
     word-wrap: break-word;
     margin-bottom: 10px;
   }
 
   .course-attribute {
     color: #32343d;
-    font-size: 16px;
+    font-size: 0.88rem;
     font-family: Mulish;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.33rem;
     word-wrap: break-word;
-    margin-left: px;
+    /* margin-left: px; */
   }
 
   .course-card {
     border-radius: 0.625rem;
     padding: 15px;
-    height: 290px;
+    height: auto;
     margin-right: 30px;
-    width: 690px;
+    width: 100%;
   }
 
   .card-body {
@@ -843,10 +776,10 @@
 
   .course-title {
     color: #4c6ffa;
-    font-size: 18px;
+    font-size: 1rem;
     font-family: Mulish;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 1.4rem;
     word-wrap: break-word;
     margin-bottom: 15px;
     margin-top: 0;
@@ -854,14 +787,13 @@
 
   .course-price {
     color: #e8533f;
-    font-size: 18px;
+    font-size: 1rem;
     font-family: Mulish;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 1.55rem;
     word-wrap: break-word;
     background-color: #fff0f0;
     padding: 6px 15px 6px 15px;
-
     max-width: auto;
     max-height: 2.875rem;
     border-radius: 6px;
@@ -871,25 +803,33 @@
     margin-left: 25px;
     margin-bottom: 15px;
     color: white;
-    font-size: 16px;
+    font-size: 0.88rem;
     font-family: Mulish;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.55rem;
     word-wrap: break-word;
     padding: 8px 25px 8px 25px;
     border-radius: 6px;
   }
   .price-card {
     color: #e8533f;
-    font-size: 18px;
+    font-size: 1rem;
     font-family: Mulish;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 1.55rem;
     word-wrap: break-word;
   }
 }
 
+/* news Section */
+
+.myNewsSwiper {
+  width: 100%;
+  padding-top: 10px;
+}
+
 .news-day img {
+  /* icon calendar */
   width: 16px;
   height: 16px;
   margin-right: 5px;
@@ -909,26 +849,26 @@
 
 .news-day {
   color: #4c6ffa;
-  font-size: 14px;
+  font-size: 0.77rem;
   font-family: Mulish;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.22rem;
   word-wrap: break-word;
 }
 
 .news-content {
   color: #32343d;
-  font-size: 16px;
+  font-size: 0.77rem;
   font-family: Mulish;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.4rem;
   word-wrap: break-word;
 }
 
 /* SE park */
 .separk-title {
   color: #4c6ffa;
-  font-size: 24px;
+  font-size: 1.33rem;
   font-family: Mulish;
   font-weight: 700;
   text-transform: uppercase;
@@ -936,21 +876,9 @@
 }
 
 .se-park-img {
-  height: 50px;
+  max-height: 50px;
   margin-right: 49px;
-  width: 160px;
-}
-
-.se-park-img {
-  height: 50px;
-  width: 160px;
-  margin-right: 49px;
-  flex-shrink: 0;
-}
-
-.se-park-img {
-  height: max-content;
-  width: max-content;
+  width: auto;
   object-fit: cover;
 }
 
@@ -992,4 +920,66 @@
 
 .footer-dot {
   margin-right: 10px;
+}
+
+/* responsive */
+@media (max-width: 375px) {
+  /* .container {
+    max-width: 375px;
+  } */
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .myCourseSwiper .swiper-wrapper .swiper-slide {
+    height: auto;
+    .course-card-img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 0.625rem;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 991px;
+  }
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1366px;
+  }
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 1450px;
+  }
 }
