@@ -1054,14 +1054,17 @@ html {
     display: flex;
     align-items: center;
     color: white;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw + 1rem, 2rem);
+    transition: font-size 0.5s ease;
     font-weight: 700;
     word-wrap: break-word;
     margin-right: 0px;
   }
 
   .text-veChungToi {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+    font-size: clamp(1.1rem, 2vw + 1rem, 2rem);
+  transition: font-size 0.5s ease;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -1075,14 +1078,18 @@ html {
 
   .text-namKinhNghiem {
     color: white;
-    font-size: 0.45rem;
+    /* font-size: 0.45rem; */
+    font-size: clamp(0.45rem, 2vw + 0.45rem, 0.89rem);
+    transition: font-size 0.5s ease;
     font-weight: 700;
     word-wrap: break-word;
   }
 
   .text-nhungThanhTuu {
     color: white;
-    font-size: 0.5rem;
+    /* font-size: 0.5rem; */
+    font-size: clamp(0.5rem, 2vw + 0.4rem, 1rem);
+    transition: font-size 0.5s ease;
     font-weight: 600;
     word-wrap: break-word;
   }

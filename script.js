@@ -76,7 +76,6 @@ window.addEventListener("load", function () {
     //     slidesPerView: 4,
     //   },
     //},
-
   });
 
   const mainSwiper = new Swiper(".product-swiper-main", {
@@ -107,6 +106,10 @@ window.addEventListener("load", function () {
       prevEl: "#slideLeft",
     },
     breakpoints: {
+            0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
       375: {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -145,6 +148,10 @@ window.addEventListener("load", function () {
       prevEl: "#slideLeft2",
     },
     breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
       375: {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -183,6 +190,10 @@ window.addEventListener("load", function () {
       disableOnInteraction: false,
     },
     breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
       375: {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -223,6 +234,10 @@ window.addEventListener("load", function () {
     },
     freeMode: true, // giúp trượt mượt 1920 1366 991 768 576 375
     breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
       375: {
         slidesPerView: 2,
         spaceBetween: 10,
