@@ -105,7 +105,7 @@
           </div>
 
           <div class="contact navbar-nav align-items-center flex-row">
-            <div class="d-flex align-items-center mr-3">
+            <div class="phone-number d-flex align-items-center mr-3">
               <a href="tel:+84543823650" class="d-flex align-items-center">
                 <img
                   class="img-contact mr-2"
@@ -117,7 +117,7 @@
               </a>
             </div>
 
-            <div class="d-flex align-items-center mr-3">
+            <div class="gmail d-flex align-items-center mr-3">
               <a
                 href="mailto:info@huecit.com"
                 class="d-flex align-items-center"
@@ -132,7 +132,7 @@
               </a>
             </div>
 
-            <div class="d-flex align-items-center">
+            <div class="address d-flex align-items-center">
               <a href="#" class="d-flex align-items-center text-dark">
                 <img
                   class="img-contact mr-2"
@@ -204,10 +204,10 @@
       </nav> -->
 
       <nav
-        class="navbar navbar-expand-xl navbar-light bg-light sticky-top shadow-sm" style="margin: 0px !important; padding: 0px !important;"
+        class="navbar navbar-expand-xl navbar-light bg-light sticky-top shadow-sm"
+        style="margin: 0px !important; padding: 0px !important"
       >
         <div class="container">
-
           <a class="navbar-brand" href="#">
             <img src="/HomeAssets/huecit_logo2.png" />
           </a>
@@ -224,9 +224,15 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-
-          <ul class="collapse navbar-collapse " id="mainNav" style="margin: 0px 0px 0px 100px !important; padding: 0px !important;">
-            <div class="navbar-nav ml-auto" >
+          <ul
+            class="collapse navbar-collapse"
+            id="mainNav"
+            style="
+              margin: 0px 0px 0px 100px !important;
+              padding: 0px !important;
+            "
+          >
+            <div class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#home">Trang chủ</a>
               </li>
@@ -245,13 +251,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="#news">Tin tức</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item nav-se-park">
                 <a class="nav-link" href="#se-park">Công viên phần mềm Huế</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item blog">
                 <a class="nav-link" href="#blog">Blog</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item search-icon">
                 <a class="nav-link text-dark" href="#" title="Tìm kiếm">
                   <i class="bx bx-search" style="font-size: 1.5rem"></i>
                 </a>
@@ -480,47 +486,44 @@
 
         <div class="about-achievements-bar px-0">
           <div class="overlay-aboutBar"></div>
-          <div class="about-content row text-white">
-            <div
-              class="col-12 col-md-4 text-center mb-3 mb-md-0"
-              style="max-width: max-content"
-            >
+          <div class="row about-content text-white">
+            <div class="group-vechungtoi col-4 text-center mb-3 mb-md-0">
               <div class="text-veChungToi">VỀ CHÚNG TÔI</div>
               <div class="text-nhungThanhTuu">
                 Những thành tựu chúng tôi đã đạt được
               </div>
             </div>
 
-            <div class="col-12 col-md-8 overlay-about2 text-center">
+            <div class="col-8 overlay-about2 text-center">
               <div class="group-kinhNghiem row">
-                <div class="d-flex flex-row g-0">
+                <div class="experience d-flex flex-row g-0">
                   <span class="about-num"
                     >25
-                    <img src="/IconAssets/arrow_up.svg" />
+                    <img class="icon-arrow-up" src="/IconAssets/arrow_up.svg" />
                     <span class="text-namKinhNghiem">Năm kinh nghiệm</span>
                   </span>
                 </div>
 
-                <div class="d-flex flex-row">
+                <div class="customer d-flex flex-row">
                   <span class="about-num"
                     >30
-                    <img src="/IconAssets/arrow_up.svg" />
+                    <img class="icon-arrow-up" src="/IconAssets/arrow_up.svg" />
                     <span class="text-namKinhNghiem">Khách hàng</span>
                   </span>
                 </div>
 
-                <div class="d-flex flex-row">
+                <div class="project d-flex flex-row">
                   <span class="about-num"
                     >400
-                    <img src="/IconAssets/arrow_up.svg" />
+                    <img class="icon-arrow-up" src="/IconAssets/arrow_up.svg" />
                     <span class="text-namKinhNghiem">Dự án</span>
                   </span>
                 </div>
 
-                <div class="d-flex flex-row">
+                <div class="price d-flex flex-row">
                   <span class="about-num"
                     >20
-                    <img src="/IconAssets/arrow_up.svg" />
+                    <img class="icon-arrow-up" src="/IconAssets/arrow_up.svg" />
                     <span class="text-namKinhNghiem">Giải thưởng</span>
                   </span>
                 </div>
@@ -1608,59 +1611,26 @@
                   dụng di động
                 </div>
               </div>
-              <a
+              <a 
                 href="#home"
-                class="btn rounded-circle shadow-lg"
-                style="
-                  position: fixed;
-                  bottom: 80px;
-                  right: 20px;
-                  width: 56px;
-                  height: 56px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  z-index: 1050;
-                  font-size: 1.5rem;
-                  background: rgb(65, 4, 4);
-                  border: 2px solid red;
-                "
+                class="top-btn btn rounded-circle shadow-lg"
+
                 title="Lên đầu trang"
               >
                 <i class="bx bx-up-arrow-alt text-light"></i>
               </a>
+              
               <a
                 href="#message"
-                class="btn btn-primary rounded-circle shadow-lg"
-                style="
-                  position: fixed;
-                  bottom: 10px;
-                  right: 20px;
-                  width: 56px;
-                  height: 56px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  z-index: 1050;
-                  font-size: 1.5rem;
-                "
+                class="message-btn btn btn-primary rounded-circle shadow-lg"
                 title="Liên hệ & Góp ý"
               >
                 <span
-                  class="rounded-circle"
-                  style="
-                    width: 36px;
-                    height: 36px;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
+                  class="rounded-circle message-bg"
                 >
-                  <img
+                  <img class="message-icon"
                     src="IconAssets/icon_message.svg"
                     alt="nodes"
-                    style="width: 24px; height: 24px"
                   />
                 </span>
               </a>
