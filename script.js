@@ -53,29 +53,30 @@ window.addEventListener("load", function () {
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
-    // breakpoints: {
-    //   375: {
-    //     slidesPerView: 1,
-    //     spaceBetween: 10,
-    //   },
-    //   576: {
-    //     slidesPerView: 1,
-    //     spaceBetween: 20,
-    //   },
-    //   768: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 20,
-    //   },
-    //   991: {
-    //     slidesPerView: 3,
-    //   },
-    //   1366: {
-    //     slidesPerView: 3,
-    //   },
-    //   1920: {
-    //     slidesPerView: 4,
-    //   },
-    //},
+    //min-width
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      375: {
+        slidesPerView: 3,
+      },
+      576: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      991: {
+        slidesPerView: 4,
+      },
+      1366: {
+        slidesPerView: 4,
+      },
+      1920: {
+        slidesPerView: 4,
+      },
+    },
   });
 
   const mainSwiper = new Swiper(".product-swiper-main", {
@@ -106,7 +107,7 @@ window.addEventListener("load", function () {
       prevEl: "#slideLeft",
     },
     breakpoints: {
-            0: {
+      0: {
         slidesPerView: 1,
         spaceBetween: 0,
       },

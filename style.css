@@ -490,7 +490,7 @@ html {
   flex: 1 1 0;
   padding: 16px;
   position: relative; /* Quan trọng để pseudo-element định vị được */
-  height: 136px;
+  height: max-content;
   width: 641px;
 }
 
@@ -515,7 +515,8 @@ html {
   flex: 1 1 0;
   padding: 16px;
   position: relative; /* Quan trọng để pseudo-element định vị được */
-  height: 136px;
+  height: max-content;
+  min-height: 136px;
   width: min-content;
 }
 
@@ -1013,6 +1014,7 @@ html {
     position: relative;
     border-radius: 10px;
     margin-top: 50px;
+    padding:2px;
   }
 
   .overlay-aboutBar {
