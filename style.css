@@ -1046,7 +1046,7 @@ html {
     background: #881c014d;
     border-radius: 10px;
     z-index: 1;
-    max-width: 800px;
+    width: auto;
     margin-left: 0px;
   }
 
@@ -1123,6 +1123,13 @@ html {
   html {
     font-size: 15px;
   }
+
+   #product .about-achievements-bar .group-kinhNghiem .pride{
+    display: none;
+  }
+
+  
+
 }
 
 /* responsive */
