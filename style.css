@@ -117,36 +117,48 @@ html {
   gap: 10px;
 }
 
-#mainNav .nav-link {
-  color: #32343d;
+.nav-item{
   display: flex;
-  align-content: center;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 26px;
-  text-decoration: none;
-  padding-bottom: 2px;
-  transition: color 0.2s ease;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  margin-right: 15px;
+  justify-content: end;
 }
+
+
+
 
 .navbar-brand img {
   width: 204px;
   height: 60px;
 }
+#mainNav .nav-link {
+  color: #32343d;
+  display: flex;
+  align-items: center; /* căn icon/text giữa chiều cao */
+  justify-content: end;
+  text-align: right !important;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  text-decoration: none;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  margin-right: 15px;
+
+  /* Giữ chiều cao đồng đều thay vì padding dưới lớn */
+  height: 71px; /* bằng chiều cao navbar */
+  padding: 0 10px; /* chỉ padding trái/phải */
+  border-bottom: 2px solid transparent; /* tránh layout shift khi hover */
+}
+
 
 #mainNav .nav-link:hover {
   color: #ff6200;
-  border-bottom: 2px solid #ff6200;
+  border-bottom-color: #ff6200;
 }
 
-/* Khi link có class active */
 #mainNav .nav-link.active {
   color: #ff6200;
-  border-bottom: 2px solid #ff6200;
+  border-bottom-color: #ff6200;
 }
+
 
 .container-fluid {
   padding-left: 30px;
