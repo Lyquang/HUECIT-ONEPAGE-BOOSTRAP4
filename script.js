@@ -109,7 +109,7 @@ window.addEventListener("load", function () {
     breakpoints: {
       0: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 5,
       },
       375: {
         slidesPerView: 1,
@@ -151,23 +151,23 @@ window.addEventListener("load", function () {
     breakpoints: {
       0: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 5,
       },
       375: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 5,
       },
       576: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 5,
       },
       768: {
-        slidesPerView: 1,
-        spaceBetween: 0,
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
       991: {
-        slidesPerView: 1,
-        spaceBetween: 10,
+        slidesPerView: 2,
+        spaceBetween: 5,
       },
       1366: {
         slidesPerView: 2,
