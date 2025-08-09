@@ -117,9 +117,14 @@ html {
   gap: 10px;
 }
 
-.nav-item {
+.navbar-collapse {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar-brand img {
@@ -130,7 +135,7 @@ html {
   color: #32343d;
   display: flex;
   align-items: center; /* căn icon/text giữa chiều cao */
-  justify-content: end;
+  justify-content: flex-end;
   text-align: right !important;
   font-size: 18px;
   font-weight: 600;
@@ -138,8 +143,6 @@ html {
   text-decoration: none;
   transition: color 0.2s ease, border-bottom 0.2s ease;
   margin-right: 15px;
-
-  /* Giữ chiều cao đồng đều thay vì padding dưới lớn */
   height: 71px; /* bằng chiều cao navbar */
   padding: 0 10px; /* chỉ padding trái/phải */
   border-bottom: 2px solid transparent; /* tránh layout shift khi hover */
@@ -153,6 +156,11 @@ html {
 #mainNav .nav-link.active {
   color: #ff6200;
   border-bottom-color: #ff6200;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
 }
 
 .container-fluid {
@@ -992,7 +1000,6 @@ html {
       border-radius: 0.625rem;
     }
   }
-
 }
 
 @media (max-width: 1438px) {
@@ -1112,10 +1119,17 @@ html {
       object-fit: cover;
       border-radius: 0.625rem;
     }
-      .card-body {
-    padding: 15px 15px 0px 15px !important;
+    .card-body {
+      padding: 15px 15px 0px 15px !important;
+    }
   }
-  }
+  
+  .navbar-collapse {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
 }
 
 @media (max-width: 991px) {

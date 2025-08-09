@@ -293,30 +293,3 @@ window.onscroll = () => {
   });
 };
 
-// document.getElementById("slideLeft").addEventListener("click", function () {
-//   document.getElementById("eduNewsSlider").scrollBy({
-//     left: -355,
-//     behavior: "smooth",
-//   });
-// });
-
-// document.getElementById("slideRight").addEventListener("click", function () {
-//   document.getElementById("eduNewsSlider").scrollBy({
-//     left: 355,
-//     behavior: "smooth",
-//   });
-// });
-
-// document.getElementById("slideLeft2").addEventListener("click", function () {
-//   document.getElementById("courseIT").scrollBy({
-//     left: -710,
-//     behavior: "smooth",
-//   });
-// });
-
-// document.getElementById("slideRight2").addEventListener("click", function () {
-//   document.getElementById("courseIT").scrollBy({
-//     left: 710,
-//     behavior: "smooth",
-//   });
-// });
