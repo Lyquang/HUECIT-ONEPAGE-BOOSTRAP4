@@ -1,12 +1,12 @@
 🌐 OneLanding Page – Trung tâm Công nghệ Thông tin Thành phố Huế (HUECIT)
-🏛️ Giới thiệu
+#🏛️ Giới thiệu
 
 OneLanding Page – HUECIT là trang giới thiệu chính thức của Trung tâm Công nghệ Thông tin Thành phố Huế, được thiết kế tinh tế và chuẩn pixel-perfect theo bản thiết kế gốc.
 Trang web được tối ưu hiển thị responsive trên mọi thiết bị, mang lại trải nghiệm mượt mà và hiện đại cho người dùng.
 
-🔗 Link demo: https://huecit-onepage-boostrap-4.vercel.app/
+#🔗 Link demo: https://huecit-onepage-boostrap-4.vercel.app/
 
-✨ Tính năng nổi bật
+#✨ Tính năng nổi bật
 
 🎯 Thiết kế chuẩn pixel (Pixel Perfect) theo bản thiết kế gốc.
 
@@ -31,7 +31,8 @@ SmartMenu.js	Quản lý menu điều hướng thông minh
 Owl Carousel / Slick Carousel	Trình chiếu ảnh và nội dung động
 AOS (Animate On Scroll)	Hiệu ứng khi cuộn trang
 WOW.js + Animate.css	Kích hoạt hiệu ứng CSS mượt mà khi cuộn đến vùng nhìn thấy
-🚀 Hướng dẫn chạy dự án
+
+#🚀 Hướng dẫn chạy dự án
 1️⃣ Clone repo
 git clone https://github.com/<your-username>/huecit-onepage-boostrap-4.git
 
@@ -45,7 +46,7 @@ Chạy trực tiếp trên trình duyệt hoặc sử dụng Live Server trong V
 # Nếu dùng VS Code
 Alt + L + O   # hoặc click chuột phải -> "Open with Live Server"
 
-🧱 Cấu trúc thư mục
+#🧱 Cấu trúc thư mục
 huecit-onepage-boostrap-4/
 │
 ├── index.html                # Trang chính
@@ -57,8 +58,16 @@ huecit-onepage-boostrap-4/
 ├── libs/                     # Các thư viện ngoài (Swiper, SmartMenu, AOS, WOW.js, v.v.)
 └── README.md                 # Tài liệu hướng dẫn (file này)
 
-🖼️ Hình ảnh minh họa
+#🖼️ Hình ảnh minh họa
 Desktop	Tablet	Mobile
+<img width="1903" height="881" alt="huecit1" src="https://github.com/user-attachments/assets/52ba1407-1316-4c17-99c6-77081f42dac5" />
+<img width="1914" height="891" alt="huecit2" src="https://github.com/user-attachments/assets/70b573c0-5374-462d-9da4-19310b099e5e" />
+<img width="1907" height="887" alt="huecit3" src="https://github.com/user-attachments/assets/5c75d529-c0a0-4ea7-a36a-5023175e41fe" />
+
+
+
+
+
 
 	
 	
